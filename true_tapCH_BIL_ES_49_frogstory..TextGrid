@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 0.7072239215357286 
+tiers? <exists> 
+size = 7 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "49 - words" 
+        xmin = 0 
+        xmax = 0.7072239215357286 
+        intervals: size = 2 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.6776628929599156 
+            text = "tronco" 
+        intervals [2]:
+            xmin = 0.6776628929599156 
+            xmax = 0.7072239215357286 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "49 - phones" 
+        xmin = 0 
+        xmax = 0.7072239215357286 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.007662892959842793 
+            text = "t" 
+        intervals [2]:
+            xmin = 0.007662892959842793 
+            xmax = 0.13766289295972456 
+            text = "rf" 
+        intervals [3]:
+            xmin = 0.13766289295972456 
+            xmax = 0.3076628929597973 
+            text = "o" 
+        intervals [4]:
+            xmin = 0.3076628929597973 
+            xmax = 0.33766289295977003 
+            text = "n" 
+        intervals [5]:
+            xmin = 0.33766289295977003 
+            xmax = 0.45766289295988827 
+            text = "k" 
+        intervals [6]:
+            xmin = 0.45766289295988827 
+            xmax = 0.6776628929599156 
+            text = "o" 
+        intervals [7]:
+            xmin = 0.6776628929599156 
+            xmax = 0.7072239215357286 
+            text = "sp" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "" 
+        xmin = 0 
+        xmax = 0.7072239215357286 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.06871079203858699 
+            text = "" 
+        intervals [2]:
+            xmin = 0.06871079203858699 
+            xmax = 0.1324035362537188 
+            text = "52" 
+        intervals [3]:
+            xmin = 0.1324035362537188 
+            xmax = 0.7072239215357286 
+            text = "" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "EV" 
+        xmin = 0 
+        xmax = 0.7072239215357286 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.036481623500549176 
+            text = "" 
+        intervals [2]:
+            xmin = 0.036481623500549176 
+            xmax = 0.0704281740524948 
+            text = "4" 
+        intervals [3]:
+            xmin = 0.0704281740524948 
+            xmax = 0.7072239215357286 
+            text = "" 
+    item [5]:
+        class = "IntervalTier" 
+        name = "" 
+        xmin = 0 
+        xmax = 0.7072239215357286 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7072239215357286 
+            text = "" 
+    item [6]:
+        class = "TextTier" 
+        name = "" 
+        xmin = 0 
+        xmax = 0.7072239215357286 
+        points: size = 0 
+    item [7]:
+        class = "IntervalTier" 
+        name = "" 
+        xmin = 0 
+        xmax = 0.7072239215357286 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7072239215357286 
+            text = "" 
