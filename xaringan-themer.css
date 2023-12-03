@@ -20,7 +20,7 @@
  * ------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Georgia:300,300i&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Georgia&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Times+New+Roman&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap);
 
 
 :root {
@@ -32,35 +32,34 @@
   --header-font-family: Georgia;
   --header-font-is-google: 1;
   --header-font-family-fallback: Georgia, serif;
-  --code-font-family: 'Times New Roman';
+  --code-font-family: 'Source Code Pro';
   --code-font-is-google: 1;
   --base-font-size: 20px;
-  --text-font-size: 1.02rem;
+  --text-font-size: 0.95rem;
   --code-font-size: 0.9rem;
   --code-inline-font-size: 1em;
-  --header-h1-font-size: 1.5rem;
-  --header-h2-font-size: 2.25rem;
-  --header-h3-font-size: 1.5rem;
+  --header-h1-font-size: 1.7rem;
+  --header-h2-font-size: 1.5rem;
+  --header-h3-font-size: 1.2rem;
 
   /* Colors */
-  --text-color: #000000;
-  --header-color: #9b3651;
+  --text-color: #272822;
+  --header-color: #23395b;
   --background-color: #FFFFFF;
-  --link-color: #9b3651;
-  --text-bold-color: #9b3651;
+  --link-color: #23395b;
+  --text-bold-color: #23395b;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #000000;
-  --inverse-background-color: #ebb415;
-  --inverse-header-color: #000000;
-  --inverse-link-color: #9b3651;
-  --title-slide-background-color: #9b3651;
+  --inverse-text-color: #FFFFFF;
+  --inverse-background-color: #23395b;
+  --inverse-header-color: #FFFFFF;
+  --inverse-link-color: #23395b;
+  --title-slide-background-color: #23395b;
   --title-slide-text-color: #FFFFFF;
-  --header-background-color: #9b3651;
+  --header-background-color: #23395b;
   --header-background-text-color: #FFFFFF;
-  --primary: #9b3651;
-  --secondary: #ebb415;
+  --base: #23395b;
   --white: #FFFFFF;
-  --black: #000000;
+  --black: #272822;
 }
 
 html {
@@ -79,8 +78,8 @@ h1, h2, h3 {
 }
 .remark-slide-content {
   background-color: var(--background-color);
-  font-size: 1.02rem;
-  padding: 30px 64px 30px 64px;
+  font-size: 0.95rem;
+  padding: 16px 64px 16px 64px;
   width: 100%;
   height: 100%;
 }
@@ -101,10 +100,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #9b3651;
+  color: #23395b;
 }
 .remark-slide-number {
-  color: #ebb415;
+  color: #23395b;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -152,10 +151,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #9b365199;
+  color: #23395b99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #9b3651;
+  color: #23395b;
 }
 .right-column {
   width: 75%;
@@ -177,7 +176,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #ebb41580;
+  border-left: solid 5px #23395b80;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -194,7 +193,7 @@ th, td {
 .remark-slide table:not(.table-unshaded) thead,
 .remark-slide table:not(.table-unshaded) tfoot,
 .remark-slide table:not(.table-unshaded) tr:nth-child(even) {
-  background: #FBF0D0;
+  background: #D3D7DE;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -204,7 +203,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #FBF0D0;
+  background-color: #D3D7DE;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -274,17 +273,11 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   }
 }
 
-.primary {
-  color: var(--primary);
+.base {
+  color: var(--base);
 }
-.bg-primary {
-  background-color: var(--primary);
-}
-.secondary {
-  color: var(--secondary);
-}
-.bg-secondary {
-  background-color: var(--secondary);
+.bg-base {
+  background-color: var(--base);
 }
 .white {
   color: var(--white);
