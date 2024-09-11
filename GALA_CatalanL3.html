@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Acquisition of connected speech in L3 Catalan-L3 English speakers</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gemma Repiso-Puigdelliura (Universitat Autònoma de Barcelona)" />
+    <script src="libs/header-attrs-2.25/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+    <script src="libs/d3-3.3.8/d3.min.js"></script>
+    <script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+    <link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+    <script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+    <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="libs/chromatography-0.1/chromatography.js"></script>
+    <script src="libs/DiagrammeR-binding-1.0.11/DiagrammeR.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Acquisition of connected speech in L3 Catalan-L3 English speakers
+]
+.subtitle[
+## GALA16: 16th Generative Approaches to Language Acquisition
+]
+.author[
+### Gemma Repiso-Puigdelliura (Universitat Autònoma de Barcelona)
+]
+
+---
+
+&lt;!-- this adds the link footer to all slides, depends on my-footer class in css--&gt;
+
+
+
+&lt;style type="text/css"&gt;
+.regression table {
+  font-size: 11px;     
+}
+.caption {
+  font-size: .6rem;
+}
+
+&lt;/style&gt;
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(logo.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+
+
+
+---
+
+class: center, middle, inverse
+
+# Background
+
+
+---
+
+# Acquisition in L3 phonology
+
+- **Learning an L3** is fundamentally different from learning an L2 &amp;rarr; L3 learners are already bilingual speakers and can draw from their two languages to create representations in their L3  &lt;small&gt;(Gut, 2010)&lt;/small&gt;. 
+
+
+- These representations are subject to **crosslinguistic influence (CLI)** (temporary or long-lasting change of a property of one language triggered by a property of another language &lt;small&gt;(Kellerman 1984; Smith 1983)&lt;/small&gt;).
+
+  - In L3 speakers, CLI can originate from multiple sources, such as the first language (L1) or a second language (L2) (factors: age of acquisition, linguistic similarity)
+  
+  
+
+
+  - CLI is **multidirectional**; a newly acquired language (L3) can have temporary or long-lasting effects on previously acquired linguistic systems (L1, L2) &lt;small&gt;(see Phonological Permeability Hypothesis [Amaro &amp; Rothman 2010; Amaro 2017] or Similarity Convergence Hypothesis [Brown &amp; Chang, 2023])&lt;/small&gt;.
+
+
+| Progressive Transfer                                                                 | Regressive Transfer                                                 |
+|--------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Transfer of features from L1 or L2 into a later learned language (L2 or L3).         | Transfer of features from L3 back into previously learned languages (L1 and L2). |
+
+???
+
+- Learning an L3 is fundamentally different from learning an L2 (Gut, 2010). L3 learners are already bilingual speakers and can draw from their two languages to create representations in their L3 .
+- Therefore, examining the sources of CLI can shed light on how the speaker’s languages
+are represented in their linguistic system. More specifically, it can help us determine the
+robustness or entrenchment of recently or previously acquired linguistic representations.
+  - L3 learners differ in the number of sources that can derive in **crosslinguistic influence**. 
+
+---
+# L3 phonology models
+
+
+- **L3 acquisition models** have traditionally modeled L3 learning by putting forth an asymmetric effect of the L1 and the L2 for reasons of cognitive differentiation &lt;small&gt;(L1 Transfer scenario [Hermas, 2014; Garcia Lecumberri &amp; Gallardo, 2003; Llisterri &amp; Poch-Olive, 1987], L2 Status Factor Model [Bardel &amp; Falk, 2007; Bardel &amp; Sanchez, 2017)&lt;/small&gt;.
+
+- More recently, the Scalpel Model (2017) &lt;small&gt;(Slabakova, 2017) &lt;/small&gt; posits no *a priori* privileged language to influence the next language, but rather that the previously acquired languages are in competition depending on their relative activation (predominance of communicative use).
+
+
+- Therefore, it is important to factors such as dominance, proficiency, bilingual experience, or language use &lt;small&gt;(Lloyd-Smith et al. 2017; Cabrelli &amp; Pichan 2021; Wrembel et al. 2019; Kopečková 2016)&lt;/small&gt; to better understand this relative activation. 
+
+
+???
+- Most of these models have formalized transfer at the initial stages of L3 acquisition , **static L1-L2**. However, the proficiency and dominance of the L1 and L2 in multilingual speakers may shift during their lifespan (e.g., heritage speakers, heritage returnees, long-term immigrants). 
+
+| Model                              | Proponents                                               | Proposal                                                                                                          |
+|------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| L1 Transfer Scenario               | Hermas (2014); Garcia Lecumberri &amp; Gallardo (2003); Llisterri &amp; Poch-Olive (1987) | L1, due to its entrenchment, serves as the initial state for L3 acquisition.                                         |
+| L2 Status Factor Model (L2SF)      | Bardel &amp; Falk (2007); Bardel &amp; Sanchez (2017)            | L2 exerts more influence on L3 due to cognitive similarities and grouping as 'foreign languages'.                  |
+| Cumulative Enhancement Model (CEM) | Flynn et al. (2004)                                     | Language learning is cumulative, with facilitative transfer from both L1 and L2 on a property-by-property basis.  |
+| Typological Primacy Model (TPM)    | Rothman (2011; 2015); Rothman et al. (2019)             | The most structurally similar language (L1 or L2) is copied in the L3 initial state, with possible secondary transfer. |
+| Linguistic Proximity Model (LPM)   | Westergaard (2021)                                     | Acquisition occurs feature-by-feature, comparing each new feature with previously learned languages.             |
+
+
+
+
+
+???
+Most of these models assumed a fixed L1 and L2 status
+---
+
+# Language dominance in trilingual speakers
+
+
+
+
+- **Language Dominance**: relative skills in the different language dimensions (e.g., production, processing, perception) and domains (i.e., contexts of language use) of a bilingual's two languages &lt;small&gt;(Birdsong 2014)&lt;/small&gt;.
+
+
+Language dominance extensively examined in bilingualism research &lt;small&gt;(Amengual &amp; Chamorro 2016; Amengual 2018; Kim et al. 2020; Casillas &amp; Simonet 2016; Henriksen et al. 2021; Simonet 2014; Puig-Mayenco et al. 2018a; Bedore et al. 2012; Hamann et al. 2019)&lt;/small&gt;. 
+
+  - Research on dominance is more recent in L3 studies, more common in morphosyntax &lt;small&gt;(Puig-Mayenco et al. 2022; Angelovska et al. 2023; Fallah &amp; Jabbari 2018; Puig-Mayenco et al. 2018b)&lt;/small&gt; than phonology &lt;small&gt;(Cabrelli et al. 2023; Lloyd-Smith et al. 2017; Cabrelli &amp; Iverson 2023)&lt;/small&gt;.
+
+
+- Mixed findings: Some studies show dominance moderates L3 transfer &lt;small&gt;(Angelovska et al. 2023; Puig-Mayenco et al. 2022; Fallah &amp; Jabbari 2018)&lt;/small&gt;, others find no effect &lt;small&gt;(Cabrelli &amp; Iverson 2023; Cabrelli et al. 2023)&lt;/small&gt;. 
+
+
+.pull-left[.full-width[.content-box-yellow[Dominance as a continuum variable?]]]
+.pull-right[.full-width[.content-box-yellow[Dominance in the three languages?]]]
+
+
+???
+- Dominance effects may remain elusive as many studies (with exceptions like Cabrelli et al. 2023) treat dominance as a binary construct, which may not fully capture its gradient nature. 
+
+- Moreover, most studies have assessed L3 performance based on L1-L2 dominance without considering the relationship between L1-L2 and L3 dominance (Puig-Mayenco et al. 2022; Cabrelli et al. 2023; Angelovska et al. 2023). While this approach offers insights during initial L3 acquisition stages, it may become less relevant later as L3 dominance itself gains significance
+
+
+---
+# Connected speech
+
+- Connected speech is the production of consecutive words that may be altered **word-external speech processes**.
+
+- Languages prefer syllables with an initial consonant /CV/ (e.g., [ka.sa] *casa* 'house') and disprefer syllables with no initial consonant /V/ (e.g., ['unik] *únic* 'unique/only') &lt;small&gt;(Blevins 1995; Itô &amp; Mester 1999; Jakobson 1962; Steriade et al. 1988; Steriade 1982) &lt;/small&gt; which form a **hiatus** with a preceding vowel-final word (e.g., [ka'mi 'unik] *camí únic* 'only path').
+
+
+
+
+
+---
+
+## English
+
+
+Word-external V1-to-V2 sequences show vowel-initial glottal marking in V2 stressed sequences &lt;font size="2"&gt;(Davidson &amp; Erker, 2014)&lt;/font&gt;. Vowel-initial glottalization acts as a **prominence marker**  &lt;small&gt;(Bird &amp; Garellek 2019; Dilley et al. 1996; Pompino-Marschall &amp; Żygis 2010; Shattuck-Hufnagel 1995; Davidson et al. 2021; Steffman 2021)&lt;/small&gt;.
+
+- Realized on a continuum ranging from creaky phonation to complete glottal stops &lt;small&gt;(Dilley et al. 1996; Pompino-Marschall &amp; Żygis 2010;Shattuck-Hufnagel 1995; Davidson et al. 2021)&lt;/small&gt;.
+
+.pull-left[
+**Complete glottal stop**
+&lt;audio controls=""&gt;
+  &lt;source src="./arl041_english_exp1_decree_oozing_GS.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+
+
+&lt;img src="./arl041_english_exp1_decree_oozing_GS.png" width="300px" /&gt;
+
+]
+
+.pull-right[
+**Creaky phonation**
+
+&lt;audio controls=""&gt;
+  &lt;source src="./arl041_english_exp1_sudoku_illness_cr.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+
+
+&lt;img src="./arl041_english_exp1_sudoku_illness_cr.png" width="300px" /&gt;
+
+]
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+## Catalan and Spanish
+
+
+V1-to-V2 word-external sequences are repaired with diphthongization (e.g., *dono alegries* [wə], I make someone happy), deletion (e.g., *trenta anys* ['a], thirty years), or coalescence (e.g., *compro ulleres* [u], I buy glasses). However, hiatus is preserved in V2 stressed sequences  (e.g., matí únic [ˈiˈu] 'unique morning') &lt;small&gt;(Cabré &amp; Prieto 2005; Alba 2006; Souza 2010a)&lt;/small&gt;. 
+
+.pull-left[
+
+
+| **Atonic - Tonic**  | **Tonic - Atonic** |
+|---------------------|--------------------|
+| see otters          | he objected        |
+| [iˈʔɑ]              | [iə]               |
+| 76% glottal phonation | 40.5% glottal phonation |
+
+(Davidson &amp; Erker, 2014)
+
+]
+
+.pull-right[
+
+**Produced with modal phonation**
+&lt;audio controls=""&gt;
+  &lt;source src="arn090_catala_exp1_geniurba.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+
+
+&lt;img src="./arn090_catala_exp1_geniurba.png" width="300px" /&gt;
+]
+
+
+
+
+
+
+
+???
+Languages prefer syllables with an initial consonant /CV/ (e.g., [ka.sa] *casa* 'house') and disprefer syllables with no initial consonant /V/ (e.g., ['unik] *únic* 'unique/only') &lt;font size="2"&gt;(Blevins 1995; Itô &amp; Mester 1999; Jakobson 1962; Steriade et al. 1988; Steriade 1982) &lt;/font&gt; which form a hiatus with a preceding vowel-final word (e.g., [ka'mi 'unik] *camí únic* 'only path').
+
+# Vowel-initial glottalization
+
+
+- In English, **vowel-initial** words often show **glottalization** (Dilley et al. 1996; Pompino-Marschall &amp; Żygis 2010).
+
+- Vowel-initial glottalization acts as a **prominence marker** in **phrase-initial**, **stressed**, and **pitch-accented syllables** (Bird &amp; Garellek 2019; Dilley et al. 1996; Pompino-Marschall &amp; Żygis 2010; Shattuck-Hufnagel 1995; Davidson et al. 2021; Steffman 2021).
+
+
+- Realized on a continuum ranging from creaky phonation to complete glottal stops (Dilley et al. 1996; Pompino-Marschall &amp; Żygis 2010;
+Shattuck-Hufnagel 1995; Davidson et al. 2021),
+
+
+
+
+&lt;div style="display: flex; justify-content: space-around;"&gt;
+  &lt;div style="flex: 1; padding: 1px; text-align: center;"&gt;
+    &lt;h4&gt;Creaky phonation&lt;/h4&gt;
+    &lt;img src="arl041_english_exp1_sudoku_illness_cr.png" alt="Image 1" style="width: 100%;"/&gt;
+  &lt;/div&gt;
+  &lt;div style="flex: 1; padding: 1px; text-align: center;"&gt;
+    &lt;h4&gt;Complete glottal stop&lt;/h4&gt;
+    &lt;img src="arl041_english_exp1_decree_oozing_GS.png" alt="Image 2" style="width: 100%;"/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+- Given that glottal marking appears in vowel-initial position, it may also serve as an **epenthetic process** to repair **ill-formed structures** like **onsetless syllables** (i.e., VC) (Schwartz 2017; Davidson et al. 2021), as they are crosslinguistically unpreferred structures (Blevins 1995; Itô &amp; Mester 1999; Jakobson 1962; Steriade et al. 1988; Steriade 1982).
+
+- **A period of vowel-initial glottalization** is the preferred strategy when the first syllable of the second word is **stressed**.
+
+| **Atonic - Tonic**  | **Tonic - Atonic** |
+|---------------------|--------------------|
+| see otters          | he objected        |
+| [iˈʔɑ]              | [iə]               |
+| 76% glottal phonation | 40.5% glottal phonation |
+
+(Davidson &amp; Erker, 2014)
+
+
+
+
+# Vowel-to-vowel sequences in Catalan and Spanish
+
+
+
+
+- Vowel-to-vowel sequences between words, forming a hiatus, is a marked structure, and are repaired using external sandhi strategies: diphthongization (e.g., *dono alegries* [wə], I make someone happy), deletion (e.g., *trenta anys* ['a], thirty years), or coalescence (e.g., *compro ulleres* [u], I buy glasses).
+
+- The use of each process depends on factors like frequency, semantic coherence, discourse context, stress, and speech rate  (Cabré &amp; Prieto 2005; Alba 2006; Souza 2010a).
+
+- However, hiatus is preserved in atonic-tonic or tonic-tonic sequences (between words). **Repairs of hiatus are sensitive to stress**.
+
+
+| unstr.-unstr.     | stress. - unstr.     | unstr. - str.   | str. - str.     |
+|-------------------|-------------------|------------------|-------------------|
+| porto invitacions [wi] | xampú idoni [ˈuj] | crisi única [iˈu] | matí únic [ˈiˈu] |
+
+(Cabré, T., &amp; Prieto, P., 2005)
+
+- All these strategies are produced with **modal phonation**.
+
+???
+Thus, while glottalization is not typical in Catalan and Spanish, sandhi processes are sensitive to stress, much like vowel-initial glottalization in English.
+
+---
+# Does glottal marking transfer?
+
+| Study                        | Bilingual Context                            | Results                                                         |
+|------------------------------|----------------------------------------------|-----------------------------------------------------------------|
+| González &amp; Weissglass (2017)  | **Late bilinguals** (L1 English, L2 Spanish) | L1 English → L2 Spanish: L1 influences L2 glottalization.                       |
+| Repiso-Puigdelliura (2023)    | **Early bilinguals** (Heritage Spanish)      | English majority language → Spanish heritage language 
+| Mohamed et al. (2019)         | **Early bilinguals** (Arabic-Spanish)        | Arabic heritage language → Spanish majority language (Arabic-dominant speakers)            |
+| Trawick &amp; Michnowicz (2019)   | **Early bilinguals** (Guaraní-Spanish)       | L1 Guaraní → L1 Spanish                     |
+| Gynan &amp; López Almada (2020)   | **Early bilinguals** (Guaraní-Spanish)                | L1 Guaraní → L1 Spanish   |
+| Eger et al. (2019)            | **Late bilinguals** (Italian L1, German L2)  | Acquisition of L2 German (correct production of /h/ and /ʔ/ was 70%, with some reduction in glottal stops.) |
+
+
+
+---
+# Aims of the study: Progressive transfer
+
+.full-width[.content-box-yellow[L1 English to L3 Catalan? Higher rates of glottalization in L3 English compared to Catalan-Spanish bilinguals influenced by low EngDom ].content-box-red[L1 English to L2 Spanish? Higher rates of glottalization in L2 Spanish compared to Catalan-Spanish bilinguals influenced by low English dominance ]]
+&lt;style&gt;
+.box {
+    position:absolute;
+    width:780px;
+    height:650px;
+    left:80%;
+    top:50%;
+    margin-left:-390px;
+    margin-top:-325px;
+}
+
+.box1 {
+    position:absolute;
+    width:780px;
+    height:650px;
+    left:80%;
+    top:90%;
+    margin-left:-390px;
+    margin-top:-325px;
+}
+
+.box2 {
+    position:absolute;
+    width:780px;
+    height:650px;
+    left:50%;
+    top:100%;
+    margin-left:-390px;
+    margin-top:-325px;
+}
+
+.box4 {
+    position:absolute;
+    width:780px;
+    height:650px;
+    left:80%;
+    top:40%;
+    margin-left:-390px;
+    margin-top:-325px;
+}
+
+
+&lt;/style&gt;
+
+&lt;div class="box"&gt;
+
+
+<div class="DiagrammeR html-widget html-fill-item" id="htmlwidget-f02ed17be7190f216145" style="width:504px;height:504px;"></div>
+<script type="application/json" data-for="htmlwidget-f02ed17be7190f216145">{"x":{"diagram":"\ngraph LR;\n\n    %% Language Transfer Visualization\n    A[L3 Catalan] \n    B[L2 Spanish] \n    C[L1 English] \n\n    C --> A\n    C --> B\n\n    style A fill:#f7d679, stroke:#000000\n    style B fill:#f7d679, stroke:#000000\n    style C fill:#b5e7a0, stroke:#000000\n"},"evals":[],"jsHooks":[]}</script>
+
+&lt;/div&gt;
+&lt;div class="box2"&gt;
+
+.full-width[.content-box-yellow[L1 Cat-Sp to L3 English?: Lower rates of glottalization in L3 English compared to L1 English monolinguals influenced by low English dominance ]]
+&lt;/div&gt;
+
+&lt;div class="box1"&gt;
+
+<div class="DiagrammeR html-widget html-fill-item" id="htmlwidget-caa258cf3b4bf0a06b66" style="width:504px;height:504px;"></div>
+<script type="application/json" data-for="htmlwidget-caa258cf3b4bf0a06b66">{"x":{"diagram":"\ngraph LR;\n%%| fig-align: center\n\n    %% Language Transfer Diagram\n    A[L1 Catalan] \n    B[L1 Spanish] \n    C[L3 English] \n\n    A --> C\n    B --> C\n\n    style A fill:#f7d679, stroke:#000000\n    style B fill:#f7d679, stroke:#000000\n    style C fill:#b5e7a0, stroke:#000000\n"},"evals":[],"jsHooks":[]}</script>
+
+&lt;/div&gt;
+---
+# Aims of the study: Regressive transfer
+
+.full-width[.content-box-yellow[L3 English to L1 Catalan? Higher rates of glottalization in L1 Catalan influenced by low English dominance ].content-box-red[L1 English to L1 Spanish?: Higher rates of glottalization in L1 Spanish influenced by low English dominance]]
+
+&lt;div class="box4"&gt;
+
+<div class="DiagrammeR html-widget html-fill-item" id="htmlwidget-b17646439e434bf6dcaa" style="width:100%;height:600px;"></div>
+<script type="application/json" data-for="htmlwidget-b17646439e434bf6dcaa">{"x":{"diagram":"\ngraph LR;\n\n    %% Language Transfer Diagram\n    C[L3 English] \n    A[L1 Catalan] \n    B[L1 Spanish] \n\n    C --> A\n    C --> B\n\n    style A fill:#f7d679, stroke:#000000\n    style B fill:#f7d679, stroke:#000000\n    style C fill:#b5e7a0, stroke:#000000\n      \n      "},"evals":[],"jsHooks":[]}</script>
+&lt;/div&gt;
+&lt;div class="box2"&gt;
+
+
+.full-width[.content-box-yellow[L3 Catalan to L1 English? Lower rates of glottalization in L1 English by Spanish-English bilinguals compared to L1 English monolinguals influenced by high dominance in Catalan].content-box-red[L1 English to L1 Spanish?: Low rates of glottalization in L1 English by Spanish-English bilinguals compared to L1 English monolinguals influenced by high dominance in Spanish]]
+&lt;/div&gt;
+
+
+&lt;div class="box1"&gt;
+
+
+<div class="DiagrammeR html-widget html-fill-item" id="htmlwidget-400c938dad24a76d68a8" style="width:504px;height:504px;"></div>
+<script type="application/json" data-for="htmlwidget-400c938dad24a76d68a8">{"x":{"diagram":"\ngraph LR;\n\n    %% Language Transfer Diagram\n    C[L3 Catalan] \n    B[L2 Spanish] \n    A[L1 English] \n\n    C --> A\n    B --> A\n\n    style A fill:#f7d679, stroke:#000000\n    style B fill:#b5e7a0, stroke:#000000\n    style C fill:#b5e7a0, stroke:#000000\n"},"evals":[],"jsHooks":[]}</script>
+&lt;/div&gt;
+
+
+
+
+
+---
+
+class: center, middle, inverse
+
+# Methodology
+
+---
+
+# Participants
+
+Participants recruited online and experimental sessions conducted over Zoom .footnote[[1] Participants were recruited in the framework of Helms (2023) 1.] 
+
+- Trilingual speakers recruited among students from 11 universities in the United States with Catalan language classes, and followers of Catalan language social media accounts.
+- Monolingual English speakers were recruited from contacts in the United States.
+
+
+
+| Group                                   | Gender                               | Age                                            | Dominance  (Bilingual Language Profile)                                   |
+|--------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------|
+| **L3 Catalan Spanish-English Bilinguals (L3Cat-SpEnBil)** | F: 11, M: 8, Non-binary: 1 | Mean Age: 28.55, Age Range: 20 to 51 | Catalan: Mean = 93.09 [SD = 15.74], Spanish: Mean = 110.84 [SD = 22.93], **English**: Mean = 172.32 [SD = 12.72] |
+| **L3 English Catalan-Spanish Bilinguals (L3Eng-CatSpBil)** | F: 7, M: 17 | Mean Age: 25.4795571, Age Range: 19 to 19 | **Catalan**: Mean = 137.53 [SD = 13.87], **Spanish**: Mean = 155.46 [SD = 14.72], English: Mean = 119.76 [SD = 23] |
+| **English Monolingual Speakers (L1 English)** | F: 11, M: 8, Non-binary: 1 | Mean Age: 28.55, Age Range: 20 to 51 | N/A                                                | N/A                                                |
+
+???
+
+Participants conducted the three tasks on Zoom \citep{ZoomVideoCommunicationsInc.2019ZoomChat} in three sessions, with at least 48 hours between them. The experimental sessions were conducted by an English L1 speaker (English session), a Catalan-dominant bilingual (Catalan session), and a Spanish-English bilingual (Spanish session). Participants recorded themselves using their smartphone and the app ShurePlus MOTIV \textregistered, which records in WAV format at a sampling rate of 48Khz and 16 bits. Participants were instructed to hold their phone 4 inches from their mouth. Microphone gain was adjusted accordingly to avoid clipping in the audio. 
+- The Bilingual Language Profile (BLP) was employed to evaluate language dominance, known for its reliability as a proxy for this purpose (Birdsong et al., 2012; Olson, 2023). This tool measures relative dominance between two languages by computing a continuous score from the difference in scores between the two languages. An extended version of the questionnaire was used to include a third language, capturing aspects such as language history, use, proficiency, and attitudes.
+
+
+---
+
+
+# Experiment 1: Catalan
+
+
+
+- 2 vowels x 4 stress patterns x 4 observations reading task (32 target items)
+
+|                     | /iu/                             | /ui/                               |
+|---------------------|----------------------------------|------------------------------------|
+| unstress. unstress. | **ge**ni ur**bà** `urban genie'          | re**si**du in**cert** `uncertain reidue'   |
+| unstress. - stress. | **cra**ni **úl**tim `last cranium'       | re**si**du **ín**tegre `whole residue'     |
+| stress. - unstress. | ca**mí** ur**bà** `urban path'           | Pe**rú** in**cert** `immense Peru'         |
+| stress. - stress.   | ca**mí úl**tim `last path'           | de**jú** **ín**tegre `complete fast'       |
+
+
+# Experiment 2: Spanish
+
+- 2 vowels x 4 stress patterns x 4 observations reading tasks 
+
+|                     | /iu/                             | /ui/                               |
+|---------------------|----------------------------------|------------------------------------|
+| unstress. unstress. | **der**bi ur**ba**no `urban derby'       | es**pí**ritu i**né**dito `original spirit' |
+| unstress. - stress. | **bi**ci **ú**til `useful bike'          | es**pí**ritu **ín**timo `intimate spirit'  |
+| stress. - unstress. | mani**quí** ur**ba**no `urban mannequin' | ver**mú** i**né**dito `original vermouth'  |
+| stress. - stress.   | mani**quí** **ú**til `useful mannequin'  | ver**mú** **ín**timo `intimate vermouth'   |
+
+---
+
+# Experiment 3: English
+
+- 2 vowels x 4 stress patterns x 4 observations reading tasks 
+
+
+|                     | /iu/  - /ɪu/                     | /ui/-  /uɪ/                        |
+|---------------------|----------------------------------|------------------------------------|
+| unstress. unstress. | **bu**sy u**ma**mi                       | u**bun**tu inspi**ra**tion                 |
+| unstress. - stress. | de**cree** **oo**zing                    | u**bun**tu **i**mage                       |
+| stress. - unstress. | **see** u**ma**mi                        | ta**boo** inspi**ra**tion                  |
+| stress. - stress.   | **see** **oo**zes                        | ta**boo** **ill**ness                      |
+
+- &lt;span style="font-size: smaller;"&gt;&lt;strong&gt;Note&lt;/strong&gt;: To maintain consistent vowel quality across conditions, unstressed vowels have no primary stress but may have secondary stress.&lt;/span&gt;
+
+
+
+
+---
+
+# Principal Components Analysis: Language dominance
+
+
+.pull-left[
+
+
+**PC1** explains 40.35% of the variance (positively correlated with English and negatively correlated with Catalan and Spanish language history, language use, proficiency, attitudes): **English-to-Catalan/Spanish dominance**.
+
+&lt;small&gt;
+
+|                         | Spanish | Catalan | English | Exp. Variance |
+|-------------------------|---------|---------|---------|---------------|
+| **Component 1**          |         |         |         | **40.35%**    |
+| Age of onset of acquisition | 0.844   | 0.943   | -0.801  |               |
+| Age of comfort           | 0.769   | 0.944   | -0.922  |               |
+| Years of study           | -0.421  | -0.822  | 0.643   |               |
+| Years in region          | -0.948  | -0.958  | 0.889   |               |
+| Years in family          | -0.638  | -0.826  | 0.952   |               |
+| Years in workplace       | -0.446  | -0.650  | 0.637   |               |
+| Frequency use with friends |         | -0.609  | 0.560   |               |
+| Frequency use with family |         | -0.751  | 0.877   |               |
+| Frequency of self-talk   |         | -0.720  | 0.768   |               |
+| Frequency in counting    |         | -0.790  | 0.961   |               |
+| Speaking level           | -0.590  | -0.854  | 0.690   |               |
+| Listening level          | -0.598  | -0.805  |         |               |
+| Reading level            | -0.605  | -0.737  | 0.651   |               |
+| Writing level            | -0.625  | -0.835  | 0.731   |               |
+| Feels like oneself       |         | -0.694  | 0.746   |               |
+| Identifies with culture  |         | -0.714  | 0.746   |               |
+| Wants to sound native    | -0.558  |         | 0.775   |               |
+| Wants to be perceived as native | -0.637  |         | 0.637   |               |
+
+
+&lt;/small&gt;
+]
+
+.pull-right[
+
+**PC2** explains 10.49% of the variance (negatively correlated with Spanish use, proficiency, and attitudes and positively correlated with Catalan language use).
+
+&lt;small&gt;
+
+
+|                         | Spanish | Catalan | English | Exp. Variance |
+|-------------------------|---------|---------|---------|---------------|
+| **Component 2**          |         |         |         | **10.49%**    |
+| Frequency use with friends |         | 0.530   |         |               |
+| Frequency use with family | -0.670  |         |         |               |
+| Frequency use at work    |         | 0.647   |         |               |
+| Frequency in self-talk   | -0.622  | 0.520   |         |               |
+| Speaking level           |         | -0.647  |         |               |
+| Feels like oneself       | -0.581  |         |         |               |
+| Identifies with culture  | -0.582  |         |         |               |
+| Wants to be perceived as native | -0.425  |         |         |               |
+
+&lt;/small&gt;
+
+
+]
+
+---
+
+# Language dominance in trilingual speakers
+
+
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-12-1.png" width="550px" /&gt;
+
+
+
+
+
+---
+
+
+# Data annotation
+
+.pull-left[
+&lt;font size="3"&gt;
+Modal voice: Periodic signal, regularity of glottal pulses in the spectrogram, and regularity of amplitude in the oscillogram.
+&lt;/font&gt;
+
+
+
+&lt;audio controls=""&gt;
+  &lt;source src="arn090_catala_exp1_geniurba.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+&lt;img src="arn090_catala_exp1_geniurba.png" width="2800" /&gt;
+]
+
+.pull-right[ &lt;font size="3"&gt; Creaky or glottal occlusive voice (glottalization): Irregularity in glottal pulses in amplitude, or a period of silence shorter than 150 ms (glottal occlusion). &lt;/font&gt;
+
+&lt;audio controls=""&gt;
+  &lt;source src="peruinca_l1eng.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+&lt;img src="peruinca_l1eng.png" width="2800" /&gt;
+]
+
+---
+# Statistical analyses
+
+- **Differences across groups:**
+  - Mixed-effects logistic regressions for each language 
+      - DV: 1 = presence of glottal marking, 0 = absence of glottal marking)
+      - Fixed factors: 
+         - **Group**: 
+            - L3Eng-CatSpBil
+            - L3Cat-SpEnBil
+            - L1 English monolinguals (for English session)
+         - **Stress**: 
+            - unstressed-unstressed
+            - unstressed-stressed
+            - stressed-unstressed
+            - stressed-stressed
+         - Interaction between Group and Stress.
+    
+      - Random factors:random intercept for item and participant
+
+---
+# Results: Experiment 1 - Catalan
+
+
+
+
+
+
+
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-19-1.png" width="550px" /&gt;
+---
+# Results: Experiment 1 - Catalan
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-20-1.png" width="550px" /&gt;
+
+---
+# Results: Experiment 1 - Catalan
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-21-1.png" width="550px" /&gt;
+
+
+
+---
+# Results: Experiment 2 - Spanish
+
+
+
+
+
+
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-24-1.png" width="550px" /&gt;
+
+
+---
+# Results: Experiment 2 - Spanish
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-25-1.png" width="550px" /&gt;
+
+---
+# Results: Experiment 2 - Spanish
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-26-1.png" width="550px" /&gt;
+
+
+---
+# Results: Experiment 3 - English
+
+
+
+
+
+
+
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-30-1.png" width="550px" /&gt;
+
+
+
+
+---
+# Results: Experiment 3 - English
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-32-1.png" width="550px" /&gt;
+
+---
+# Results: Experiment 3 - English
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-33-1.png" width="550px" /&gt;
+
+---
+# Results: Experiment 3 - English
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-34-1.png" width="550px" /&gt;
+
+
+---
+# Interim summary
+
+.pull-left[
+**Catalan**: 
+
+  - L3Cat-SpEnBil produce a higher rate of glottalization than the L3Eng-CatSpBil
+
+| Group             | Stress comparison                             |
+|-------------------|----------------------------------------|
+| **L3Eng-CatSpBil** | unstr.-unstr &lt; str.-unstr = unstr.-str &lt; str.str |
+| **L3Cat-SpEnBil**  | unstr.-unstr (= str.-unstr) &lt; unstr.-str &lt; str.str |
+
+**Spanish**: 
+
+  - L3Cat-SpEnBil produce a higher rate of glottalization than the L3Eng-CatSpBil
+
+| Group             | Stress comparison                             |
+|-------------------|----------------------------------------|
+| **L3Eng-CatSpBil** | unstr.-unstr &lt; str.-unstr = unstr.-str &lt; str.str |
+| **L3Cat-SpEnBil**  | unstr.-unstr (= str.-unstr) &lt; unstr.-str &lt; str.str |
+]
+.pull-right[
+
+
+**English**
+
+  - L3Eng-CatSpBil produce a higher rate of glottalization than the L1English, but only in unstr.-str when compared to the L3Cat-SpEnBil
+  - L3Cat-SpEnBil produce a lower rate of glottalization than the L1English in V1-non-primary stress condition
+ 
+ 
+| Group                  | Stress comparisons                                            |
+|------------------------|-------------------------------------------------------|
+| **L1 English Monolinguals** | unstr.-unstr &lt; unstr.-str &lt; str.-unstr &lt; unstr.-str &lt; str.-str |
+| **L3Eng-CatSpBil**     | unstr.-unstr, str.-unstr &lt; unstr.-str &lt; str.-str    |
+| **L3Cat-SpEnBil**      | unstr.-unstr, str.-unstr &lt; unstr.-str &lt; str.-str    |
+]
+
+---
+
+# Interim summary 
+.pull-left[
+**L3 English - 2L1 Catalan-Spanish bilinguals**
+<div class="DiagrammeR html-widget html-fill-item" id="htmlwidget-28c1ccc9a19624a78f89" style="width:120%;height:504px;"></div>
+<script type="application/json" data-for="htmlwidget-28c1ccc9a19624a78f89">{"x":{"diagram":"\ngraph TD;\n\n    %% Subgraph to position L1 Catalan and L1 Spanish vertically\n     \n     subgraph    \n      A[L1 Catalan]\n      B[L1 Spanish]\n     end\n    C[L3 English]\n\n    %% Arrows with labels for Progressive and Regressive Transfer\n    A -.-> |Progressive Transfer| C\n    B -.-> |Progressive Transfer| C\n    C --> |Regressive Transfer| A\n    C --> |Regressive Transfer| B\n\n    %% Style for nodes\n    style A fill:#f7d679, stroke:#000000\n    style B fill:#f7d679, stroke:#000000\n    style C fill:#b5e7a0, stroke:#000000\n\n   \n"},"evals":[],"jsHooks":[]}</script>
+]
+
+.pull-right[
+**L3 Catalan - Spanish English bilinguals**
+
+
+
+<div class="DiagrammeR html-widget html-fill-item" id="htmlwidget-790450d4a80fb8404626" style="width:120%;height:504px;"></div>
+<script type="application/json" data-for="htmlwidget-790450d4a80fb8404626">{"x":{"diagram":"\ngraph TD;\n\n \n    %% Subgraph to simulate vertical placement\n    A[L1 English]\n    C[L2 Spanish]\n    B[L3 Catalan]\n\n    %% Position nodes by having them flow top-down (TD)\n    A --> |Progressive Transfer| C\n    A --> |Progressive Transfer| B\n    C -.-> |Regressive Transfer| A\n    B -.-> |Regressive Transfer| A\n    C -.-> |Progressive Transfer| B\n\n    %% Style for nodes\n    style A fill:#f7d679, stroke:#000000\n    style B fill:#b5e7a0, stroke:#000000\n    style C fill:#f7d679, stroke:#000000\n\n   \n"},"evals":[],"jsHooks":[]}</script>
+]
+
+
+
+
+<div class="DiagrammeR html-widget html-fill-item" id="htmlwidget-44218badc87dfcb79043" style="width:504px;height:504px;"></div>
+<script type="application/json" data-for="htmlwidget-44218badc87dfcb79043">{"x":{"diagram":"\ngraph LR;\n\n    %% Subgraph to position L1 Catalan and L1 Spanish vertically\n    subgraph \n      A[L1 Catalan]\n      B[L1 Spanish]\n    end\n\n    C[L3 English]\n\n    %% Arrows with labels for Progressive and Regressive Transfer\n    A --> |Progressive Transfer| C\n    B --> |Progressive Transfer| C\n    C --> |Regressive Transfer| A\n    C --> |Regressive Transfer| B\n\n    %% Style for nodes\n    style A fill:#f7d679, stroke:#000000\n    style B fill:#f7d679, stroke:#000000\n    style C fill:#b5e7a0, stroke:#000000\n\n   \n"},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+
+
+
+
+---
+# Language dominance: Catalan for L3Eng-CatSpBil
+
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-37-1.png" width="550px" /&gt;
+
+---
+# Language dominance: Catalan for L3Cat-SpEngBil
+
+
+&lt;div style="display: flex; justify-content: space-between;"&gt;
+
+&lt;div style="flex: 1; padding: 1px;"&gt;
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-38-1.png" width="100%" /&gt;
+
+&lt;/div&gt; &lt;div style="flex: 1; padding: 1px;"&gt; 
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-39-1.png" width="100%" /&gt;
+
+  &lt;/div&gt; &lt;/div&gt; 
+
+
+
+
+
+
+
+
+
+
+---
+# Language dominance: Spanish for L3Eng-CatSpBil
+
+&lt;div style="display: flex; justify-content: space-between;"&gt;
+
+&lt;div style="flex: 1; padding: 1px;"&gt;
+
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-42-1.png" width="100%" /&gt;
+
+&lt;/div&gt; &lt;div style="flex: 1; padding: 1px;"&gt; 
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-43-1.png" width="100%" /&gt;
+  &lt;/div&gt; &lt;/div&gt; 
+
+
+
+
+
+---
+# Language dominance: English for L3Cat-SpEngBil
+
+
+
+
+
+
+&lt;img src="GALA_CatalanL3_files/figure-html/unnamed-chunk-45-1.png" width="50%" /&gt;
+
+
+
+
+---
+# Dominance summary
+
+|                    | **Catalan**                                   | **Spanish**                                              | **English**                                     |
+|--------------------|-----------------------------------------------|----------------------------------------------------------|-------------------------------------------------|
+| **L3Cat-SpEngBil** | **PC1:** unstressed-unstressed, stressed-unstressed &lt;br&gt; **PC2:** NS | **PC1:** NS &lt;br&gt; **PC2:** NS | **PC1:** NS &lt;br&gt; **PC2:** NS |
+| **L3Eng-CatSpBil** | **PC1:** *** &lt;br&gt; **PC2:** NS | **PC1:** *** &lt;br&gt; **PC2:** ** unstressed-unstressed, stressed-unstressed, stressed-stressed | **PC1:** NS &lt;br&gt; **PC2:** unstressed-unstressed, stressed-unstressed |
+
+
+
+
+---
+# Discussion: Progressive transfer and language dominance
+
+
+
+- RQ1: Do trilingual speakers show progressive transfer from one of their L1s to their L3?
+
+**L1 English to L3 Catalan**:
+
+-  L3Cat-SpEngBil &gt; L3Eng-CatSpBil with glottal marking increasing at each level of stress.
+    - Consistent with L3Cat-SpEngBil borrowing glottal marking as a prominence-lending strategy. 
+   - **Observation**: The stressed-unstressed condition had higher glottalization (M = 39.54%) than the unstressed-unstressed condition (M = 17.07%), despite the second vowel being unstressed.
+   
+- **English dominance relative to Catalan-Spanish:** leads to a greater likelihood of vowel-initial glottalization in both unstressed-unstressed and stressed-stressed sequences.
+  - **Stressed-stressed Sequences:** L3Cat-SpEngBil transfer glottalization as a prominence-marking strategy from L1 English.
+  - **Unstressed-unstressed Sequences:** hyperarticulation strategy to enhance less familiar L3 Catalan words (see hyperarticulation related to lexical frequency &lt;small&gt;[Bell et al., 2019]&lt;/small&gt; and code-switched speech &lt;small&gt;[Olson, 2016,2019]&lt;/small&gt;)
+  
+???
+
+Going back to our research questions, we asked, Do trilingual speakers show progressive transfer from one of their L1s to their L3? Starting with L3 Catalan, Our data shows that L3 Catalan learners show greater rates of vowel initial glottalization than Catalan Spanish bilinguals. This is affected by relative dominance in English with respect to Catalan-Spanish in the stressed-stressed sequences, which is expected if they transfer English-like glottalization from their English phonology. As for the unstressed-unstressed sequences, it is possible that the strategy of glottal marking is transferred into these syllables to hyperarticulate words of low frequency. 
+
+---
+# Discussion: Progressive transfer and language dominance
+
+
+   
+**L1 English to L2 Spanish**   
+
+ - L3Cat-SpEngBil speakers exhibit more vowel-initial glottalization than L3Eng-CatSpBil speakers.
+  - **Different patterns of stress:**
+    - L3Eng-CatSpBil speakers show a consistent trend of increased vowel-initial glottalization with each level of stress.
+    - L3Cat-SpEngBil speakers show an unexpected peak in glottal marking in stressed-unstressed sequences.
+        - To maintain consistent vowel quality across conditions, some V2 unstressed tokens in Spanish were English cognates with unreduced initial vowels (e.g., *urbano* ‘urban’, *utópico* ‘utopic’.
+  - Thus, stressed-unstressed sequences may effectively behave as stressed-stressed sequences.
+
+-  No effects of **dominance**: One possibility is that our L3Cat-SpEngBil are exposed to a Spanish input containing a certain degree of glottal marking (learned Spanish in an English-speaking country and/or exposure to US Spanish)
+
+
+**L3 Catalan and L2 Spanish comparison**: Glottalization is slightly more frequent in Catalan (M = 86.43\%, SE = 7.28\%) than in Spanish (M = 83.75\%, SE = 7.92\%). **Tentatively**, transfer in L3 Catalan may occur directly from the L1 grammar (English), with the L2 (Spanish) not significantly mitigating transfer effects.
+   
+   
+???
+The first research question explored whether trilingual speakers exhibit progressive transfer from one of their first languages to their L3, and whether language dominance affects the extent of this transfer. We begin by focusing on our results for Catalan. Our findings reveal that L3 Catalan speakers produce a higher rate of vowel-initial glottalization compared to Catalan-Spanish bilinguals. In addition, the effect of stress, which shows an increase in glottal marking at each level of stress, indicates that L3 Catalan speakers use vowel-initial glottalization as a prominence-marking strategy. That is, the use of vowel-initial glottalization is consistent with the L3 Catalan speakers borrowing strategies from their L1 English. It is worth noting that the stressed-unstressed condition showed higher rates of glottalization (M = 39.54\%, SE = 10.12\%) compared to the unstressed-unstressed condition (M = 17.07\%, SE = 6.03\%), even though the second vowel was not stressed. We will return to these high probabilities after reviewing the data from all three languages, as they represent a trend across the languages.
+
+Regarding the impact of language dominance, our findings show a significant effect of PC1 across stress levels. Recall that PC1 is associated with positive scores in English dominance and negative scores in Catalan and Spanish dominance. Therefore, our findings for L3 Catalan show that the higher the dominance in English relative to Catalan and Spanish, the greater the likelihood of producing vowel-initial glottalization in both unstressed-unstressed and stressed-stressed sequences.
+
+- **Hyperarticulation:**  
+  - Related to lexical frequency, where less predictable words are produced with more salient prosodic features (e.g., longer duration, greater pitch range) \citep{Bell2009PredictabilityEnglish}.
+  - Found in bilingual speech, particularly in code-switched tokens, which are less predictable than non-code-switched ones \citep{Olson2019PhonologicalCode-switching, Olson2016TheTransfer}.
+  
+- **English Cognates:**
+  - Some unstressed-unstressed sequences may involve English cognates containing primary stress (e.g., \textit{uniforme} ‘uniform’ [\textipa{"jun\textschwa""fOrm}], \textit{urbà} ‘urban’ [\textipa{"Erb\textschwa n}]).
+  
+---
+# Discussion: Progressive transfer and language dominance
+
+**L1 Catalan-Spanish to L3 English**
+
+- L3Eng-CatSpBil speakers produce lower vowel-initial glottalization compared to L1 English speakers.
+    - Higher rate in **V2 stressed sequences:** than in **V1 stressed sequences**
+    
+- Interestingly, glottal marking is learned even though it is not part of either the Catalan or Spanish phonetic inventory and is not visible in the orthography, similar to findings for L2 German L1 Italian speakers &lt;small&gt;(Eger et al., 2019)&lt;/small&gt;.
+
+---
+# Regressive transfer and language dominance: L1/L2 to L3 transfer
+
+**L3 English to L1 Catalan- Spanish**
+
+  - L3Eng-CatSpBil speakers show vowel-initial glottalization rates predicted by increases in PC1 (higher English dominance relative to Catalan-Spanish).
+  - Three of the four highest glottalization rates came from speakers not residing in Catalan- or Spanish-speaking areas (e.g., Amsterdam, New York, Carlow) - sufficient English exposure is necessary for the transfer of glottal marking.
+  
+  - **Correlation Analysis:**
+    - **Catalan and English:** \( r(22) = .61, p = .001 \)
+    - **Spanish and English:** \( r(22) = .66, p &lt; .001 \)
+    
+  - **Implication:** Vowel-initial glottalization in Catalan and Spanish grammars likely results from interaction with English grammars rather than exposure to glottalization in Catalan or Spanish input.
+
+---
+# Regressive transfer and language dominance: L1/L2 to L3 transfer
+
+**L3 Catalan-L2 Spanish to L1 English**
+
+
+- L3Cat-SpEngBil speakers exhibit lower rates of vowel-initial glottalization in English compared to L1 English monolinguals. This difference is mediated by stress. Specifically, the statistically significant differences between L1 English monolinguals and Spanish-English bilinguals are observed among the V2 unstressed sequences.
+
+- **Language dominance**: a decrease in PC2, which correlates with negative scores in Spanish and higher scores in Catalan, results in a greater likelihood of producing vowel-initial glottalization in English, specifically in the V2 unstressed sequences. This suggests that the lower the Spanish dominance, the more likely it is that L3Cat-SpEnBil speakers produce glottal marking in English.
+
+- **Accounts of transfer**
+
+ 1. Vowel-initial glottalization appears on a continuum with varying degrees of stress. One possibility is that Spanish-English bilinguals reduce the use of glottalization for lower degrees of prominence but maintain it in prosodically stronger positions.
+  2. Contact with Spanish may reorganize prominence levels in English grammar, reducing the prominence of words with secondary stress or the saliency of unreduced vowels. Under this account, primary stress gains relevance for glottalization.
+
+---
+# Findings and implications
+
+- Vowel-initial glottalization is influenced by cross-linguistic transfer (progressive and regressive) and language dominance across three languages.
+
+
+## Model of Cross-Linguistic Influence (CLI) in L3
+- **Scenario 1:** L3 is influenced by linguistic representations of previously acquired languages 
+- **Scenario 2:** Learning in L3 impacts established categories of the previously acquired languages.
+
+
+- Compatible with models proposing active competition in the multilinguals' speech system with degrees of activation dependent on linguistic experience, language use, or proficiency &lt;small&gt;(Goldrick et al., 2016, Slabakova 2017)&lt;/small&gt; can explain how L3 grammar can "leak" into previously acquired languages, with all three grammars active to varying extents during language processing.
+  
+---
+# Trilingual dominance
+
+  - Use of a trilingual language questionnaire (based on the BLP) combined with a dimensionality reduction approach to incorporate relative dominance scores in three languages.
+  
+   - PCA was employed to create scores for:
+    - **Inter-group differences (PC1):** Distinguished English-Spanish bilinguals from Catalan-Spanish bilinguals along a continuum from English to Catalan/Spanish dominance.
+    - **Intra-group differences (PC2):** Separated participants based on their Spanish language use, proficiency, and attitudes relative to their use of Catalan.
+  - PCA reduces the risk of multicollinearity, which could arise from including three correlated raw scores, and increases the model's power by reducing the number of predictors.
+
+- **Limitations:**
+  - While PCA facilitates comparisons of dominance across the three languages, principal components are proxies for relative dominance scores. For example:
+    - PC1 correlates with negative values in English and positive values in both Catalan and Spanish.
+    - Differences between English-Catalan and English-Spanish dominance cannot be fully captured under the current analyses.
+
+---
+# Thank you
+
+---
+
+
+
+&lt;img src="./screeplot.png" width="400px" /&gt;
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-0.15.0.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
