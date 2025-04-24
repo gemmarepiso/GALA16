@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Effects of Language Dominance in Catalan-Spanish-English trilinguals’ vowelinitial glottal marking. A Principal Components Analysis Approach</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gemma Repiso-Puigdelliura (Universitat Autònoma de Barcelona)" />
+    <script src="libs/header-attrs-2.25/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+    <script src="libs/d3-3.3.8/d3.min.js"></script>
+    <script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+    <link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+    <script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+    <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="libs/chromatography-0.1/chromatography.js"></script>
+    <script src="libs/DiagrammeR-binding-1.0.11/DiagrammeR.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+&lt;!-- this adds the link footer to all slides, depends on my-footer class in css--&gt;
+
+
+
+&lt;style type="text/css"&gt;
+.regression table {
+  font-size: 11px;     
+}
+.caption {
+  font-size: .6rem;
+}
+
+&lt;/style&gt;
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(logo.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+---
+class: center, middle, inverse
+
+background-image: url(cover-image.png)
+
+##  Effects of Language Dominance in Catalan-Spanish-English trilinguals’ vowel initial glottal marking. 
+### A Principal Components Analysis Approach
+
+### Gemma Repiso-Puigdelliura 
+
+gemma.repiso@uab.cat
+
+### New Sounds 2025
+
+
+---
+
+class: center, middle, inverse
+
+# Background
+
+
+
+
+---
+
+# Multidirectional CLI in trilinguals
+
+&lt;br&gt;
+
+- **Crosslinguistic Influence (CLI)** refers to changes in one language influenced by another that arise in both early and late bilinguals &lt;small&gt;(see for reviews Jarvis, 2016; Jarvis &amp; Pavlenko, 2008; Kellerman, 1995; Odlin &amp; Yu, 2016; Sharwood Smith and Kellerman, 1986)&lt;/small&gt; and could be either **temporary** (e.g., processing demands) or **long-lasting** (e.g., shifts in mental representations).
+
+
+
+| Progressive CLI                                                                 | Regressive CLI                                                 |
+|--------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| CLI of features from L1 or L2 into a later learned language (L2 or L3).         | CLI of features from L3 back into previously learned languages (L1 and L2) |&lt;/small&gt;
+
+
+???
+
+- **Crosslinguistic Influence (CLI)** refers to changes in one language influenced by another that arise in both early and late bilinguals &lt;small&gt;(see for reviews Jarvis, 2016; Jarvis &amp; Pavlenko, 2008; Kellerman, 1995; Odlin &amp; Yu, 2016; Sharwood Smith and Kellerman, 1986)&lt;/small&gt; and could be either **temporary** (e.g., processing demands) or **long-lasting** (e.g., shifts in mental representations).
+Regressive CLI requires models of drift or attrition and can help shed light into the processing or representational **stability** of previously learned languages.
+
+- In the sound system, greater **language co-activation** (e.g., in bilingual mode or code-switching) leads to higher CLI &lt;small&gt;(Simonet, 2014; Antoniou, 2012; Amengual, 2018; Olson, 2016).&lt;/small&gt;
+
+  - Research on L3 regressive CLI can provide knowledge on the relationship between maturational constraints (e.g., reduced brain plasticity, availability of target-like representations in adulthood) and stability of early acquired languages (Cabrelli, 2023).
+  (see Phonological Permeability Hypothesis [Amaro &amp; Rothman 2010; Amaro 2017] or Similarity Convergence Hypothesis [Brown &amp; Chang, 2023])&lt;/small&gt;
+
+
+---
+
+# Multidirectional CLI in trilinguals
+
+&lt;br&gt;
+&lt;br&gt;
+
+**Sources of progressive CLI**:
+  - L1 (L1 CLI Scenario &lt;small&gt;[Hermas, 2014; Garcia Lecumberri &amp; Gallardo, 2003; Llisterri &amp; Poch-Olive, 1987]&lt;/small&gt;)
+  - L2 &lt;small&gt;(L2 Status Factor [Bardel &amp; Falk, 2007 ; Bardel &amp; Sanchez (2017); Paradis (2008); De Angelis (2005)])&lt;/small&gt; 
+  - Typologically most similar &lt;small&gt;(Rothman, 2011, 2015; Rothman et al. 2019)&lt;/small&gt;
+  - Combination of L1 and L2 &lt;small&gt;(Cumulative Enhancement Model, CEM [Flynn (2004); Puig-Mayenco et al. (2022); Cabrelli (2021)])&lt;/small&gt;. 
+
+&lt;br&gt;
+
+**Regressive CLI**:
+
+ - L3 to L2 (Differential Stability Hypothesis &lt;small&gt;(Cabrelli Amaro, 2010)&lt;/small&gt;)
+ 
+.content-box-green[
+Current activation and usage of the L1 and L2 &lt;small&gt;(Slabakova, 2017)&lt;/small&gt;. Communication Model: CLI is driven by the **dominant language** in the speaker’s communicative environment &lt;small&gt;(Fallah, 2016, 2018; Paradis, 1993; Jabbari, 2021)&lt;/small&gt;. 
+]
+
+&lt;br&gt;
+
+
+.content-box-blue[
+What is the role of L1-L2-L3 dominance in predicting progressive and regressive transfer in L3 speakers?    
+
+]
+
+
+
+???
+In trilingual speakers, studies have mostly focused on understanding the sources of CLI. According to various models of L3 CLI, In progressive transfer CLI can stem from the L1, the L2, the typologically most similar language, or a combination of the L1 and L2 in a property-by-property transfer. Regressive transfer in trilingual speakers is interesting because it can provide knowledge on the relationship between CLI and stability of early acquired languages (Cabrelli, 2023). The differential stability hypothesis posits in this regard that a late acquired system will be more vulnerable to CLI than an early acquired one. Now, it is also possible that the source of transfer varies in an individual basis based on the degree of activation of each speakers'language. The scalpel model suggests that both languages are active for transfer and that CLI will depend on current language use and activation. Similarly, the language communication model posits that the speaker's more dominant language will be more likely to be the source of transfer. For this reason in this presentation I will focus on understanding the role of L3/L2/L1 dominance in CLI. 
+
+
+---
+
+# Language dominance 
+ &lt;br&gt;
+  &lt;br&gt;
+- Language dominance: **relative skills in each language in the different language domains** (i.e., contexts of language use) of a bilingual's two languages &lt;small&gt;(Birdsong 2014)&lt;/small&gt;.
+
+  - Dominance effects on speech production and perception in bilinguals &lt;small&gt;(Amengual &amp; Chamorro 2016; Amengual 2018; Kim et al. 2020; Casillas &amp; Simonet 2016; Henriksen et al. 2021; Simonet 2014; Bedore et al. 2012; Hamann et al. 2019)&lt;/small&gt;.
+  
+  - Measured directly or indirectly via self-report &lt;small&gt;(Peña et al. 2021; Stasenko et al. 2019; Gollan et al. 2024; García 2015)&lt;/small&gt;.
+
+  - **The Bilingual Language Profile (BLP)** is widely used to assess dominance across history, use, identity, and attitudes &lt;small&gt;(Birdsong et al. 2012)&lt;/small&gt;, showing strong test-retest reliability &lt;small&gt;(Olson 2023)&lt;/small&gt;.
+
+  &lt;br&gt;
+  &lt;br&gt;
+
+
+  
+
+???
+Language dominance: **relative skills in each language in the different language domains** (i.e., contexts of language use) of a bilingual's two languages &lt;small&gt;(Birdsong 2014). Dominance effects have been found to predict transfer in the sound system of bilingual speakers. It Can be measured directly (e.g., MINT, MINT Sprint) or indirectly via self-report &lt;small&gt;(Peña et al. 2021; Stasenko et al. 2019; Gollan et al. 2024; García 2015)&lt;/small&gt;. Most widley, **The Bilingual Language Profile (BLP)** has been used to assess self reported dominance. It contains the modules of  history, use, identity, and attitudes &lt;small&gt;(Birdsong et al. 2012)&lt;/small&gt;, and it has recently shown to have strong test-retest reliability &lt;small&gt;(Olson 2023)&lt;/small&gt;. 
+  
+---
+
+# Language dominance in trilingual speakers
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+
+  - **Progressive CLI** Some studies report no clear influence of dominance on L3 stop production, with transfer aligning instead with language similarity &lt;small&gt;(Cabrelli &amp; Pichan, 2021; Cabrelli et al. 2023)&lt;/small&gt;. 
+  
+  
+  - **Regressive CLI** Regressive CLI research suggests dominance can shape L3 effects, with less-used languages more susceptible to influence &lt;small&gt;(Kartushina et al. 2019)&lt;/small&gt;.
+   
+
+
+  - **But**, studies mostly assess L1-L2 dominance (Puig-Mayenco et al. 2022; Cabrelli et al. 2023; Angelovska et al. 2023), which may overlook how emerging L3 dominance or dynamic dominance shifts across all three languages influence production, especially beyond initial exposure.
+
+???
+Examining language dominance in L3 language acquisition is more recent than in L2 acquisition, with more studies conducted in the morphosyntactic domain than in the phonetic-phonological domain Studies in L3 acquisition have examined the dominance effects of the previously acquired two languages. We seem to have inconclusive results. Cabrelli and Pichan examined dominance effects in the production of intervocalic voiced stops (i.e., /b d ɡ/) by Spanish-English bilinguals at the initial stages of L3 Brazilian Portuguese (BP) or Italian. Neither dominance, proficiency in the non-dominant language, nor bilingual experience showed significant effects on the patterns of L3 BP or L3 Italian stop production. Instead, their results show overall trends. In L3 BP, Spanish-English bilinguals transferred from Spanish (globally more similar language), but they show transfer from English in L3 Italian (globally less similar language). 
+In contrast, different outcomes have been observed regarding regressive CLI. Kartushina (2019) examined vowel production in Spanish, Basque, and English in Spanish-Basque balanced bilinguals, who learned English through immersion. The results showed that the bilingual speakers presented vowel shifts in their two L1s due to English influence. However, Spanish-dominant bilinguals showed vowel drift exclusively in their Basque production.
+Research on dominance in L3 learners has largely focused on L1-L2 dominance, often without considering how it interacts with emerging L3 dominance. Although this focus is particularly relevant in studies that assess learners in the early stages of L3 acquisition but it may overlook L3 dominance beyond initial exposure may mask its growing influence on production patterns and the dynamic of shifting dominance among the three languages.
+
+---
+# Connected speech: vowel-to-vowel sequences
+
+- In connected speech a **vowel-to-vowel sequence** forms a word-external **hiatus** (V#V, *see animals*). Hiatus is a marked structure in most languages, and, therefore repair strategies emerge &lt;small&gt;(Blevins 1995; Casali, 1996; Itô &amp; Mester 1999; Jakobson 1962; Kenstowicz, 1994; Picard, 2009) &lt;/small&gt;
+
+
+
+
+
+
+.pull-left[
+**English**
+
+Hiatus resolved with a **glottal stop/creakiness** or allowed hiatus (higher likelihood of glottalization in V2 words)  &lt;font size="2"&gt;(Davidson &amp; Erker, 2014)&lt;/font&gt;. 
+
+Vowel-initial glottalization acts as a **prominence marker**  &lt;small&gt;(Bird &amp; Garellek 2019; Dilley et al. 1996; Pompino-Marschall &amp; Żygis 2010; Shattuck-Hufnagel 1995; Davidson et al. 2021; Steffman 2021)&lt;/small&gt;.
+
+
+&lt;audio controls=""&gt;
+  &lt;source src="./arl041_english_exp1_sudoku_illness_cr.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;img src="./arl041_english_exp1_sudoku_illness_cr.png" alt="sudoku illness" width="250px" /&gt;
+&lt;p class="caption"&gt;sudoku illness&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+
+]
+
+
+.pull-right[
+**Catalan / Spanish**
+&lt;small&gt;
+
+| unstr.-unstr.     | stress. - unstr.     | unstr. - str.   | str. - str.     |
+|-------------------|-------------------|------------------|-------------------|
+| porto invitacions [wi] | xampú idoni [ˈuj] | crisi única [iˈu] | matí únic [ˈiˈu] |
+
+&lt;/small&gt;
+&lt;small&gt;(Cabré, T., &amp; Prieto, P., 2005)&lt;/small&gt;
+
+**Produced with modal phonation**
+&lt;audio controls=""&gt;
+  &lt;source src="arn090_catala_exp1_geniurba.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;img src="./arn090_catala_exp1_geniurba.png" alt="geni urbà" width="200px" /&gt;
+&lt;p class="caption"&gt;geni urbà&lt;/p&gt;
+&lt;/div&gt;
+]
+
+
+
+
+
+
+
+???
+- Languages prefer syllables with an initial consonant /CV/ (e.g., [ka.sa] *casa* 'house') and disprefer syllables with no initial consonant /V/ (e.g., ['unik] *únic* 'unique/only') &lt;small&gt;(Blevins 1995; Itô &amp; Mester 1999; Jakobson 1962; Steriade et al. 1988; Steriade 1982) &lt;/small&gt;. Onsetless syllables form a **hiatus** with a preceding vowel-final word (e.g., [ka'mi 'unik] *camí únic* 'only path').
+- Realized on a continuum ranging from creaky phonation to complete glottal stops &lt;small&gt;(Dilley et al. 1996; Pompino-Marschall &amp; Żygis 2010;Shattuck-Hufnagel 1995; Davidson et al. 2021)&lt;/small&gt;.
+- Languages prefer syllables with an initial consonant /CV/ (e.g., [ka.sa] *casa* 'house') and disprefer syllables with no initial consonant /V/ (e.g., ['unik] *únic* 'unique/only') &lt;small&gt;(Blevins 1995; Itô &amp; Mester 1999; Jakobson 1962; Steriade et al. 1988; Steriade 1982) &lt;/small&gt;. Onsetless syllables form a **hiatus** with a preceding vowel-final word (e.g., [ka'mi 'unik] *camí únic* 'only path').
+
+
+
+---
+# Does glottal marking CLI?
+
+| Study                        | Bilingual Context                            | Results                                                         |
+|------------------------------|----------------------------------------------|-----------------------------------------------------------------|
+| González &amp; Weissglass (2017)  | **Late bilinguals** (L1 English, L2 Spanish) | L1 English → L2 Spanish: L1 influences L2 glottalization.                       |
+| Repiso-Puigdelliura (2023)    | **Early bilinguals** (Heritage Spanish)      | English majority language → Spanish heritage language 
+| Mohamed et al. (2019)         | **Early bilinguals** (Arabic-Spanish)        | Arabic heritage language → Spanish majority language (Arabic-dominant speakers)            |
+| Trawick &amp; Michnowicz (2019)   | **Early bilinguals** (Guaraní-Spanish)       | L1 Guaraní → L1 Spanish                     |
+| Gynan &amp; López Almada (2020)   | **Early bilinguals** (Guaraní-Spanish)                | L1 Guaraní → L1 Spanish   |
+| Eger et al. (2019)            | **Evidence of learning in late bilinguals** (Italian L1, German L2)  | Acquisition of L2 German (correct production of /h/ and /ʔ/ was 70%, with some reduction in glottal stops.) |
+
+
+
+
+
+---
+# Aims of the study: Progressive CLI
+.pull-left[
+
+- L1 English to L3 Catalan? **Higher rates of glottalization** in L3 English compared to Catalan-Spanish bilinguals influenced by low English dominance.
+- L1 English to L2 Spanish? **Higher rates of glottalization** in L2 Spanish compared to Catalan-Spanish bilinguals influenced by low English dominance 
+]
+.pull-right[
+
+
+&lt;img src="prog1.png" width="100%" /&gt;
+
+]
+
+.pull-left[
+
+- L1 Cat-Sp to L3 English?: **Lower rates of glottalization** in L3 English compared to L1 English monolinguals influenced by low English dominance 
+
+]
+.pull-right[
+
+
+
+&lt;img src="prog2.png" width="100%" /&gt;
+]
+---
+# Aims of the study: Regressive CLI
+
+.pull-left[
+
+- L3 English to L1 Catalan? **Higher rates of glottalization** in L1 Catalan influenced by low English dominance 
+
+- L3 English to L1 Spanish? **Higher rates of glottalization** in L1 Spanish influenced by low English dominance
+
+]
+
+.pull-right[
+
+
+
+
+
+&lt;img src="regr1.png" width="100%" /&gt;
+
+]
+
+.pull-left[
+
+- L3 Catalan to L1 English? **Lower rates of glottalization** in L1 English by Spanish-English bilinguals compared to L1 English monolinguals influenced by high dominance in Catalan
+
+- L2 Spanish to L1 English?: **Low rates of glottalization** in L1 English by Spanish-English bilinguals compared to L1 English monolinguals influenced by high dominance in Spanish
+]
+
+
+.pull-right[
+
+
+
+
+&lt;img src="regr2.png" width="100%" /&gt;
+
+]
+
+
+
+
+
+---
+
+class: center, middle, inverse
+
+# Methodology
+
+---
+
+# Participants
+
+
+
+
+
+| Group                                   | Gender                               | Mean age                                            | Instruction and living experience|
+|--------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------|-----------------------------|
+| L3 Catalan Spanish-English bilinguals **(L3Cat-SpEnBil)** | F: 11, M: 8, Non-bin.: 1 | 28.55 (SD = 6.26 years) | Spanish instruction: 9.11 years (SD = 6.05); Catalan instruction: 1.53 years (SD = 1.65); Years in Catalan-speaking region: 9.11 years (SD = 6.05) |
+| L3 English Catalan-Spanish bilinguals **(L3Eng-CatSpBil)** | F: 7, M: 17 |  25.48 (SD = 7.38 years) | English instruction: 10.78 years (SD = 5.75); Years in English-speaking region: 3.04 years (SD = 5.33) |
+| English monolingual speakers **(L1 English)** | F: 8, M: 4, Non-bin.: 1 |  37 years (SD = 15.4 years) to 51 | – |
+
+
+
+
+Participants were recruited in the framework of Helms (2023).
+
+???
+
+
+- Trilingual speakers recruited among students from 11 universities in the United States with Catalan language classes, and followers of Catalan language social media accounts.
+- Monolingual English speakers were recruited from contacts in the United States.
+
+- Participants completed the Bilingual Language Profile (Birdsong et al., 2012) 
+
+- Three separated experimental sessions (Catalan, English, Spanish) over *Zoom* recorded with smartphones and the app *ShurePlus MOTIV*.
+
+
+Participants conducted the three tasks on Zoom \citep{ZoomVideoCommunicationsInc.2019ZoomChat} in three sessions, with at least 48 hours between them. The experimental sessions were conducted by an English L1 speaker (English session), a Catalan-dominant bilingual (Catalan session), and a Spanish-English bilingual (Spanish session). Participants recorded themselves using their smartphone and the app ShurePlus MOTIV \textregistered, which records in WAV format at a sampling rate of 48Khz and 16 bits. Participants were instructed to hold their phone 4 inches from their mouth. Microphone gain was adjusted accordingly to avoid clipping in the audio. 
+- The Bilingual Language Profile (BLP) was employed to evaluate language dominance, known for its reliability as a proxy for this purpose (Birdsong et al., 2012; Olson, 2023). This tool measures relative dominance between two languages by computing a continuous score from the difference in scores between the two languages. An extended version of the questionnaire was used to include a third language, capturing aspects such as language history, use, proficiency, and attitudes.
+
+
+---
+# Adapted bilingual language profile
+
+
+
+
+
+&lt;img src="plot_blp.png" width="3200" /&gt;
+
+---
+
+
+# Experiment: Catalan
+
+
+
+- 2 vowels x 4 stress patterns x 4 observations reading task (32 target items)
+
+|                     | /iu/                             | /ui/                               |
+|---------------------|----------------------------------|------------------------------------|
+| unstress. unstress. | **ge**n[i u]r**bà** *urban genie*          | re**si**d[u i]n**cert** *uncertain reidue*   |
+| unstress. - stress. | **cra**n[i **u]l**tim *last cranium*       | re**si**d[u **i]n**tegre *whole residue*     |
+| stress. - unstress. | ca**m[i** u]r**bà** *urban path*           | Pe**r[u** i]n**cert** *immense Peru*         |
+| stress. - stress.   | ca**m[i ul**tim *last path*           | de**j[u** **i]n**tegre *complete fast*       |
+
+
+# Experiment: Spanish
+
+- 2 vowels x 4 stress patterns x 4 observations reading tasks 
+
+|                     | /iu/                             | /ui/                               |
+|---------------------|----------------------------------|------------------------------------|
+| unstress. unstress. | **der**b[i u]r**ba**no *urban derby*       | es**pí**rit[u i]**né**dito *original spirit* |
+| unstress. - stress. | **bi**c[i **ú**]til *useful bike*          | es**pí**rit[u **í]n**timo *intimate spirit*  |
+| stress. - unstress. | mani**qu[i** u]r**ba**no *urban mannequin* | ver**m[ú** i**]né**dito *original vermouth*  |
+| stress. - stress.   | mani**qu[i** **u**]til *useful mannequin*  | ver**m[ú** **í]n**timo *intimate vermouth*   |
+
+---
+
+# Experiment: English
+
+- 2 vowels x 4 stress patterns x 4 observations reading tasks 
+
+
+|                     | /iu/  - /ɪu/                     | /ui/-  /uɪ/                        |
+|---------------------|----------------------------------|------------------------------------|
+| unstress. unstress. | '**bu**s[i ˌu']**ma**mi                       | u'**bun**t[u ˌɪ]nspi'**ra**tion                 |
+| unstress. - stress. | de'**cr[i** '**u**]zing                    | u'**bun**t[u **ɪ]**mage                       |
+| stress. - unstress. | '**s[i** ˌu']**ma**mi                        | ta'**b[u** ˌɪ]nspi'**ra**tion                  |
+| stress. - stress.   | '**[i** '**u**]zes                        | ta'**b[u** '**ɪ]ll**ness                      |
+
+- &lt;span style="font-size: smaller;"&gt;&lt;strong&gt;Note&lt;/strong&gt;: To maintain consistent vowel quality across conditions, unstressed vowels have no primary stress but may have secondary stress.&lt;/span&gt;
+
+
+
+---
+# Principal Components Analysis
+
+
+
+
+.pull-left[
+&lt;img src="./screeplot.png" width="400px" /&gt;
+]
+
+.pull-right[
+
+
+
+Principal Component Analysis was performed using `scikit-learn` (Pedregosa et al., 2021), capturing 90% of the variance. The optimal number of components was determined using the "elbow method" based on the scree plot. This method is used in Helms (2023).
+
+
+
+]
+???
+
+To reduce the dimensionality of the L3 BLP we used a Principal Components Analysis, which reduces the number of variables in a data set (raw BLP questions), while keeping the most important information. PCA creates new variables called principal components which are ordered by the amount of variance they explain. Each PC explains a proportion of the total variance of the data.  TO obtain the optimal number of components we used the elbow method by which we selected the number of components at the elbow of the curve.
+
+---
+# PCA loadings
+
+
+
+
+.pull-left[
+
+**Component 1: English-to-Catalan/Spanish Dominance**  
+
+- **Variance explained:** 40.35%  
+- **Key factors influencing dominance:**  
+
+
+Table: Loadings for PC1
+
+|Factor                        | Spanish| Catalan| English|
+|:-----------------------------|-------:|-------:|-------:|
+|Age of onset of acquisition   |   0.844|   0.943|  -0.801|
+|Age of comfort                |   0.769|   0.944|  -0.922|
+|Years of study                |  -0.421|  -0.822|   0.643|
+|Years in region               |  -0.948|  -0.958|   0.889|
+|Frequency of use with friends |      NA|  -0.609|   0.560|
+
+
+]
+
+.pull-right[
+ **Component 2: Spanish-to-Catalan Dominance**  
+
+- **Variance explained:** 10.49%  
+- **Key factors influencing dominance:**  
+ 
+
+Table: Loadings for PC2
+
+|Factor                     | Spanish| Catalan|English |
+|:--------------------------|-------:|-------:|:-------|
+|Frequency use with friends |      NA|    0.53|NA      |
+|Frequency use with family  |  -0.670|      NA|NA      |
+|Cultural identification    |  -0.582|      NA|NA      |
+ 
+ 
+ 
+] 
+
+
+???
+- The loadings define the contribution of each original variable to the principal components. PCA loadings represent the correlations between the original variables and the principal components. We identified two componentsComponent 1: Loadings negatively correlated with Spanish and Catalan and positively correlated with English, except for AoA and age of comfort (scale on reverse order). Component2: - Loadings positively correlated with Catalan and negatively correlated with Spanish.  
+
+---
+
+# Language dominance 
+
+
+
+
+
+
+
+
+
+&lt;img src="plot.png" width="100%" /&gt;
+
+???
+- The original data points are projected on the principal components. Scores are the coordinates of each data point along the principal components.
+
+---
+
+
+# Data annotation
+
+10,572 tokens submitted to analsys.
+.pull-left[
+&lt;font size="3"&gt;
+ Modal voice: Periodic signal, regularity of glottal pulses in the spectrogram, and regularity of amplitude in the oscillogram.
+&lt;/font&gt;
+
+
+
+&lt;audio controls=""&gt;
+  &lt;source src="arn090_catala_exp1_geniurba.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+&lt;img src="arn090_catala_exp1_geniurba.png" width="2800" /&gt;
+]
+
+.pull-right[ &lt;font size="3"&gt; Glottal marking: Creaky or glottal phonation (glottalization): Irregularity in glottal pulses in amplitude, or a period of silence shorter than 150 ms (glottal occlusion). &lt;/font&gt;
+
+&lt;audio controls=""&gt;
+  &lt;source src="peruinca_l1eng.wav" type="audio/wav"/&gt;
+&lt;/audio&gt;
+&lt;img src="peruinca_l1eng.png" width="2800" /&gt;
+]
+
+---
+# Data analysis
+
+
+| **Group Analysis** | **Dominance Analysis** |
+|--------------------|------------------------|
+| **Model:**&lt;br&gt;GLMM → Logistic regression (log-odds) | **Model:**&lt;br&gt;GLMM → Logistic regression (log-odds) |
+| **Fixed effects:**&lt;br&gt;- `group`: L3 Eng CatSp bil, L3 Cat SpEng bil, L1 EngMono&lt;br&gt;- `stress`: unstressed-unstressed, unstressed-stressed, stressed-unstressed, stressed-stressed&lt;br&gt;- `group * stress`: interaction | **Fixed effects:**&lt;br&gt;- `PC1`, `PC2`&lt;br&gt;- `stress`: same 4 categories&lt;br&gt;- `prop. English phonation` (for Catalan/Spanish models)&lt;br&gt;- `prop. English phonation * stress`: interaction |
+| **Random effects:**&lt;br&gt;- `(1  target_words)`&lt;br&gt;- `(1 partID)` | **Random effects:**&lt;br&gt;- `(1  target_words)`&lt;br&gt;- `(1  partID)` |
+
+
+---
+# Results: Experiment - English
+
+
+
+
+
+
+
+
+
+&lt;img src="plot_english_updated.png" width="100%" /&gt;
+
+
+
+
+---
+# Results: English
+
+&lt;img src="plot_english_highlighted.png" width="100%" /&gt;
+
+---
+# Results: English
+
+&lt;img src="plot_english_highlighted_v2.png" width="100%" /&gt;
+
+---
+# Results: English
+
+&lt;img src="plot_english_highlighted_v3.png" width="100%" /&gt;
+
+---
+# Results: Catalan
+
+
+
+
+
+
+
+
+
+&lt;img src="plot_catalan.png" width="100%" /&gt;
+
+
+
+
+
+
+
+
+
+---
+# Results: Spanish
+
+
+
+
+
+
+
+
+&lt;img src="plot_spanish.png" width="100%" /&gt;
+
+
+
+
+
+---
+# Results: Dominance &amp; L3 Eng CatSp bilinguals 
+
+
+&lt;img src="L3_individual.png" width="3200" /&gt;
+
+
+---
+# Results: Dominance &amp; L3 Eng CatSp bilinguals  - Catalan
+
+&lt;img src="L3_individual_catalan.png" width="3200" /&gt;
+---
+# Results: Dominance &amp; L3 Eng CatSp bilinguals  - Spanish
+
+&lt;img src="L3_individual_spanish.png" width="3200" /&gt;
+
+
+---
+# Results: Dominance &amp; L3 Eng CatSp bilinguals  - Spanish
+
+&lt;img src="L3_individual_pc2_spanish.png" width="3200" /&gt;
+
+
+
+---
+# Results: Dominance &amp; L3 Cat SpEng bilinguals 
+
+
+&lt;img src="L1_individual.png" width="3200" /&gt;
+
+---
+# Results: Dominance &amp; L3 Cat SpEng bilinguals  - Catalan
+
+
+&lt;img src="L1_individual_catalan.png" width="3200" /&gt;
+---
+
+
+# Dominance summary
+
+&lt;br&gt;
+
+&lt;br&gt;
+
+|                    | **Catalan**                                                                       | **Spanish**                                              | **English**                                                                                              |
+|--------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| **L3Eng-CatSpBil** | **PC1:** p = 0.001 &lt;br&gt; **PC2:** NS                                                | **PC1:** p &lt; 0.001 &lt;br&gt; **PC2:** p = 0.004|**PC1:** NS &lt;br&gt; **PC2:** NS
+| **L3Cat-SpEngBil** | **PC1:** = 0.04 &lt;br&gt;  **PC2:** NS | **PC1:** NS &lt;br&gt; **PC2:** NS                              | **PC1:** NS &lt;br&gt; **PC2:** NS                                                                      |
+&lt;/small&gt;
+
+
+---
+# Discussion: Progressive CLI &amp; Language Dominance
+
+&lt;br&gt;
+
+.content-box-blue[
+- L1 Cat-Sp to L3 English? **Lower rates of glottalization** in L3 English compared to L1 English monolinguals and L3 Cat Spanish-English bilinguals influenced by low English dominance. ]
+
+- Alignment with **baseline trilingual** group.
+
+- Three L3 participants (elc149, eum191, ldm015): **very low glottalization**.  
+  → May reflect early L3 stage with reliance on **modal phonation** from L1s.
+
+- No clear effect of **PC dominance scores** on glottalization patterns.
+
+
+- Findings align with prior research: L2/L3 learners acquire glottal marking but lag behind baseline &lt;small&gt;(Eger et al., 2019) &lt;/small&gt;.
+  - Glottalization = **cue to prosodic prominence** which may increase **saliency** for learning.
+  - Also it may facilitate **word retrieval**.
+  - No evidence in our data that Catalan-Spanish bilingual speakers redeploy cues from their 2L1s (since negligible rates of glottalization in Catalan and Spanish - but previous research found initial glottalization in Spanish &lt;small&gt;(Garellek, 2014)&lt;/small&gt;).
+
+???
+
+L3 Eng-Cat-Sp bilinguals differ from **L1 English** across all stress levels. L3 Eng-Cat-Sp bilinguals only differ from **L3 Cat-Sp-Eng** in the **unstressed-unstressed** condition.  
+
+
+
+
+
+
+---
+# Discussion: Progressive CLI L1 English to L2 Spanish / L3 Catalan
+
+&lt;br&gt;
+
+
+
+
+
+.pull-left[
+
+.content-box-blue[
+- L1 English to L2 Spanish? **Higher rates of glottalization** in L2 Spanish compared to Catalan-Spanish bilinguals influenced by low English dominance ]
+
+**L1 English to L2 Spanish**
+  - L2 Spanish learners show **higher glottalization rates** than early Catalan-Spanish bilinguals.  
+
+  - Some unstressed V2 tokens may carry **secondary stress**, particularly English cognates (*urbano* ‘urban’, *utópico* ‘utopic’). This suggests that **stressed-unstressed sequences behave as stressed-stressed**.  
+
+- **No effect of dominance**  
+  - Glottal marking may result from **exposure to US Spanish input**.    
+]
+
+
+.pull-right[
+
+
+.content-box-blue[
+- L1 English to L3 Catalan? **Higher rates of glottalization** in L3 English compared to Catalan-Spanish bilinguals influenced by low English dominance.
+]
+
+**L1 English to L3 Catalan**
+
+  - L3 Catalan learners exhibit **higher glottalization rates** than Catalan-Spanish bilinguals.  
+      - **V2 unstressed sequences (unstr.-unstr.)** → Possible **hyperarticulation strategy**  
+      - Used to enhance less familiar L3 Catalan words.  
+
+- **Effect of English dominance**: Initial L3 Catalan state with glottalization that reduces with English dominance.
+
+
+
+]
+
+
+???
+The first research question explored whether trilingual speakers exhibit progressive CLI from one of their first languages to their L3, and whether language dominance affects the extent of this CLI. We begin by focusing on our results for Catalan. Our findings reveal that L3 Catalan speakers produce a higher rate of vowel-initial glottalization compared to Catalan-Spanish bilinguals. In addition, the effect of stress, which shows an increase in glottal marking at each level of stress, indicates that L3 Catalan speakers use vowel-initial glottalization as a prominence-marking strategy. That is, the use of vowel-initial glottalization is consistent with the L3 Catalan speakers borrowing strategies from their L1 English. It is worth noting that the stressed-unstressed condition showed higher rates of glottalization (M = 39.54\%, SE = 10.12\%) compared to the unstressed-unstressed condition (M = 17.07\%, SE = 6.03\%), even though the second vowel was not stressed. We will return to these high probabilities after reviewing the data from all three languages, as they represent a trend across the languages.
+
+Regarding the impact of language dominance, our findings show a significant effect of PC1 across stress levels. Recall that PC1 is associated with positive scores in English dominance and negative scores in Catalan and Spanish dominance. Therefore, our findings for L3 Catalan show that the higher the dominance in English relative to Catalan and Spanish, the greater the likelihood of producing vowel-initial glottalization in both unstressed-unstressed and stressed-stressed sequences.
+
+- **Hyperarticulation:**  
+  - Related to lexical frequency, where less predictable words are produced with more salient prosodic features (e.g., longer duration, greater pitch range) \citep{Bell2009PredictabilityEnglish}.
+  - Found in bilingual speech, particularly in code-switched tokens, which are less predictable than non-code-switched ones \citep{Olson2019PhonologicalCode-switching, Olson2016TheCLI}.
+  
+- **English Cognates:**
+  - Some unstressed-unstressed sequences may involve English cognates containing primary stress (e.g., \textit{uniforme} ‘uniform’ [\textipa{"jun\textschwa""fOrm}], \textit{urbà} ‘urban’ [\textipa{"Erb\textschwa n}]).
+  
+
+
+
+
+  
+
+---
+# Regressive CLI L3 English to L1 Catalan- Spanish
+
+
+
+
+
+
+.pull-left[
+  
+.content-box-green[
+- L3 English to L1 Catalan? **Higher rates of glottalization** in L1 Catalan influenced by low English dominance 
+
+]  
+  
+  
+**L1 Catalan**
+  - Vowel-initial glottalization rates are **predicted by increases in PC1** - English dominance predicts regressive CLI.  
+
+]
+
+.pull-right[
+
+.content-box-blue[
+
+- L3 English to L1 Spanish? **Higher rates of glottalization** in L1 Spanish influenced by low English dominance
+]  
+
+**L1 Spanish**
+
+- Vowel-initial glottalization rates are **predicted by increases in PC1** - English dominance predicts regressive CLI. 
+- Vowel-initial glottalization rates **predicted by increases in PC2** `\(\Rightarrow\)` The lower the dominance in Spanish (relative to Catalan), the more Spanish becomes **vulnerable to CLI**.   
+
+]
+
+
+- Support for the **Language Communication Model**: the more active the L3 is, the more likely it is to interfere during processing of L1/L2.
+
+- Results for Spanish build on the **Differential Stability Hypothesis**, showing that CLI is not only shaped by age of acquisition, but also by current language use and identity.
+
+---
+# Regressive CLI L3 Catalan-L2 Spanish to L1 English
+
+  
+
+
+
+.content-box-green[
+- L3 Catalan-L2 Spanish to L1 English? **Lower rates of glottalization** in L1 English by Spanish-English bilinguals compared to L1 English monolinguals influenced by high dominance in Catalan or Spanish.
+
+]
+
+  - L3 Catalan learners exhibit **lower rates of vowel-initial glottalization in English** than L1 English monolinguals.  
+  
+  - **Effect of Stress:** Significant differences between **L1 English monolinguals** and **Spanish-English bilinguals** appear in **V2 unstressed sequences** (possible ceiling effects of L1 English monolinguals). 
+
+- **Lack of dominance effects**: Inconclusive evidence for CLI from Catalan or Spanish. 
+
+
+
+???
+- **Accounts of CLI**
+
+ 1. Vowel-initial glottalization appears on a continuum with varying degrees of stress. One possibility is that Spanish-English bilinguals reduce the use of glottalization for lower degrees of prominence but maintain it in prosodically stronger positions.
+  2. Contact with Spanish may reorganize prominence levels in English grammar, reducing the prominence of words with secondary stress or the saliency of unreduced vowels. Under this account, primary stress gains relevance for glottalization.
+
+
+
+  
+
+---
+## Conclusions
+
+.pull-left[
+
+.content-box-blue[
+
+  **Progressive cross-linguistic CLI**: 
+  
+  - Glottalization is transferred from L1 English to L3 Catalan. L2 Spanish glottalization could be in the input.
+  
+  - Use of modal phonation may be the initial state for L3 English, but similar patterns to L1 English speakers who are trilinguals and no effect of language dominance.  
+  
+  
+  **Saliency** and **word-retrieval facilitation** aid learning of glottalization (L3 English) and could delay learning of repairs of V-V using modal phonation (L3 Catalan).
+
+
+]
+
+]
+
+.pull-right[
+.content-box-green[
+
+**Regressive cross-linguistic CLI**
+
+ - Glottalization is transferred from L3 English to L1 Catalan and L1 Spanish in stressed conditions dependent on English dominance (support of **Language Communication Model**) to the extent to which glottalization is available in L3 English, and more likely in Spanish when Spanish is less dominant (support for **DSH**). 
+
+ - Weaker evidence that the use of modal phonation is transferred in L1 English (only in unstressed sequences).
+
+ - Glottalization may be adopted as a **prosodic enhancement cue** in L1 Catalan and Spanish.
+]
+]
+
+
+
+
+- Unclear if glottalization in L1/L2 is a **temporary processing effect** (triggered by L3 English activation) or a **lasting grammatical change** (adopted into L1/L2 phonology).
+
+  - While PCA facilitates comparisons of dominance across the three languages, principal components are proxies for relative dominance scores, Howeve, differences between English-Catalan and English-Spanish dominance cannot be fully captured under the current analyses. &lt;/small&gt; 
+
+
+
+
+---
+# Selected references
+
+Cabré, Teresa &amp; Prieto, Pilar. 2005. Positional and metrical prominence effects on vowel
+sandhi in Catalan. Prosodies with special reference to Iberian Languages 124–157.
+
+
+Cabrelli, Jennifer &amp; Iverson, Michael. 2023. Why do learners overcome non-facilitative
+CLI faster from an L2 than an L1? The cumulative input threshold hypothesis.
+International Journal of Multilingualism https://doi.org/10.1080/14790718.2023
+
+Cabrelli, Jennifer &amp; Pichan, Carrie. 2021. Initial phonological CLI in L3 Brazilian
+Portuguese and Italian. Linguistic Approaches to Bilingualism 11(2). https://doi.org/
+10.1075/lab.18048.cab
+
+Cabrelli, Jennifer &amp; Pichan, Carrie &amp; Ward, Jessica &amp; Rothman, Jason &amp; Serratrice, Ludovica. 2023. Factors that moderate global similarity in initial L3 CLI. Linguistic Approaches to Bilingualism 13(5). 638–662. https://doi.org/10.1075/lab.22062.cab
+
+Davidson, Lisa. 2020. The versatility of creaky phonation: Segmental, prosodic, and
+sociolinguistic uses in the world’s languages. Wiley Interdisciplinary Reviews: Cognitive
+Science (September). 1–18. https://doi.org/10.1002/wcs.1547
+
+Davidson, Lisa &amp; Erker, Daniel. 2014. Hiatus resolution in American English: The case
+against glide insertion. Language 90(2). 482–514. https://doi.org/10.1353/lan.2014.
+0028. https://doi.org/10.1353/lan.2014.0028https://muse.jhu.edu/article/547118
+Approaches to Bilingualism 13(5). 638–662. https://doi.org/10.1075/lab.22062.cab
+
+Garellek, Marc. 2014. Voice quality strengthening and glottalization. Journal of Phonetics
+45(1). 106–113. https://doi.org/10.1016/j.wocn.2014.04.001
+
+González, C. &amp; Weissglass, C. 2017. Hiatus resolution in L1 and L2 Spanish. In Ruth
+E.V. Lopes, Sonia M. L. Cyrino, Juanito Ornelas de Avelar (ed.), In romance languages
+and linguistic theory 12: Selected papers from the 45th linguistic symposium on romance
+languages (lsrl). 79. Campinas: John Benjamins Publishing Company.
+
+---
+# Selected references
+
+
+Gut, Ulrike. 2010. Cross-linguistic influence in L3 phonological acquisition. International
+Journal of Multilingualism 7(1). https://doi.org/10.1080/14790710902972248
+
+Puig-Mayenco, Eloi &amp; Rothman, Jason &amp; Tubau, Susagna. 2022. Language dominance
+in the previously acquired languages modulates rate of third language (L3) development
+over time: a longitudinal study. International Journal of Bilingual Education and
+Bilingualism 25(5). https://doi.org/10.1080/13670050.2020.1792408
+
+Rothman, Jason &amp; Alonso, Jorge González &amp; Puig-Mayenco, Eloi. 2019. Third language
+acquisition and linguistic CLI, vol. 163. Cambridge University Press.
+
+Slabakova, Roumyana. 2017. The scalpel model of third language acquisition. International Journal of Bilingualism 21(6). https://doi.org/10.1177/1367006916655413
+
+Smolensky, Paul &amp; Goldrick, Matthew &amp; Mathis, Donald. 2014. Optimization and
+Quantization in Gradient Symbol Systems: A Framework for Integrating the Continuous and the Discrete in Cognition. Cognitive Science 38(6). 1102–1138. https:
+//doi.org/10.1111/COGS.12047
+
+Westergaard, Marit. 2021. Microvariation in multilingual situations: The importance of
+property-by-property acquisition. Second Language Research 37(3). https://doi.org/
+10.1177/0267658319884116
+
+---
+class: center, middle, inverse
+background-image: url(cover-image.png)
+
+
+# Thank you
+
+# Gràcies
+
+## gemma.repiso@uab.cat
+
+Acknowledgments: Thank you to Annie Helms for data collection and Emmanuel Gil for data annotation.
+
+---
+
+---
+# Results: Dominance &amp; L3 Eng CatSp bilinguals  - Catalan
+
+&lt;img src="plot_catalan_eng_prop.png" width="3200" /&gt;
+---
+# L3 Eng CatSp bilinguals  - Spanish
+
+&lt;img src="plot_catalan_eng_prop.png" width="3200" /&gt;
+  
+---
+
+# Models
+
+
+
+&lt;table&gt;
+&lt;caption&gt;Model Results: L3Cat SpEng bilinguals: Catalan&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Lower &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Upper &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Effect_Size &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Std_Error &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; z_value &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Pr_z &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0032837 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0001211 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0890401 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -3.1529389 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.6837710 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -3.3964230 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0006827 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.8900538 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5735632 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.2282644 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3509789 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6084257 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0463156 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2954153 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.5948673 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2729309 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.3195820 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2573551 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9006937 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5182567 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6042792 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2531731 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0268769 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.3848190 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.7573505 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1443094 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.2004463 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2299661 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.8399901 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0115915 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.3467692 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3361784 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3052277 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9977223 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0457468 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8399322 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5334464 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3225061 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.0961705 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2316178 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.7531117 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4513828 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 17.5586488 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.6224808 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 66.6971178 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.5798587 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6809386 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.2082307 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000257 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 11.3639046 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.5621395 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 36.2530234 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3399729 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5918888 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.1062478 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000402 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0095625 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1530796 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.6580827 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0052470 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9624231 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0098886 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9921102 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.2592211 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2403609 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.2350687 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4493441 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1432016 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7129278 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4758905 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.3276537 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3552039 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 247.8615177 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.6034911 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3288301 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.1887005 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0286186 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2:sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3882096 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0560305 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.6897247 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.5216728 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9875940 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.9580960 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3380144 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3:sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1195788 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0180630 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7916230 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.1709009 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9643592 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -2.2022700 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0276462 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4:sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1397165 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0200761 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9723363 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.0850925 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9898582 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.9883050 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0467780 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+# Model
+&lt;table&gt;
+&lt;caption&gt;Model Results: L3Cat SpEng bilinguals: Catalan&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Lower &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Upper &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Effect_Size &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Std_Error &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; z_value &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Pr_z &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2926433 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0100598 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.5130797 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.6774733 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.7196257 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.7145745 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4748720 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.8182178 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7320513 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.5159620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3296157 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4641725 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2880055 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1977441 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.2200177 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4559441 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 10.8093919 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4396932 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8076170 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9874918 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3234016 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 28.7126592 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.1625417 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 198.0561031 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.8509975 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9853305 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.4073219 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0006560 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.4799306 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7964422 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.7499731 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2161183 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3161262 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2399960 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2149769 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1426821 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7117518 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.8345192 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0735353 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2415372 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5522056 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5808075 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9300695 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5917767 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.2948882 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3625296 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6031651 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0901757 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2756357 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.5276622 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0891962 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.8209664 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8326201 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7269347 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.0774986 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0377556 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2535079 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0423735 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.5166598 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.7566219 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9127059 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.5036172 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1326800 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0975943 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0106711 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8925682 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.2829073 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1292473 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -2.0606083 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0393404 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+# Model
+&lt;table&gt;
+&lt;caption&gt;Model Results: L3Cat SpEng bilinguals: English&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Lower &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Upper &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Effect_Size &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Std_Error &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; z_value &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Pr_z &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.2695179 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3385621 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 53.8417668 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8002544 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2931608 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1224443 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2616736 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2846572 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0852795 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9501669 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.6927280 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6149868 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -2.0430839 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0410441 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.2888168 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1425916 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.4664759 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6563724 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5394124 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.2070829 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0273083 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.8754814 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4344102 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.0970248 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3467116 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7462542 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8426959 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3993985 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6297926 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3876117 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0232888 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.2549151 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2476507 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.8670034 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0619011 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.4346334 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9957429 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.0669725 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1989798 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1863175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9370664 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0527372 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; cat_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 32.6301487 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.5674826 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 124.2753150 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9215117 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6822894 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.1081498 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000003 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0677159 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2454616 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.6443819 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0361240 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7500835 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0873525 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9303913 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2:cat_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4837327 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0746073 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.1363859 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.4003877 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9537390 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.7614483 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4463894 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3:cat_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3514558 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1920317 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.5111022 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1660506 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9955680 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3025232 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7622532 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4:cat_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3071202 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1882932 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.0739486 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1476604 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9885800 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2709203 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7864523 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2:sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 12.0185810 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1537622 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 125.1958980 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3708539 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1956474 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.0795879 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0375633 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3:sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.2784564 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4882902 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 57.0605441 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9172093 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2145525 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3697503 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1707648 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4:sp_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7.3324311 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6647374 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 80.8808798 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0984165 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2248543 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.6265666 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1038292 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+# Model
+&lt;table&gt;
+&lt;caption&gt;Model Results: L3Eng CatSp bilinguals: Catalan&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Lower &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Upper &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Effect_Size &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Std_Error &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; z_value &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Pr_z &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5863534 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1017557 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.378783 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.2943173 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8935614 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.5974212 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5502262 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.9214113 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1187688 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7.628604 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5910614 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4897223 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.1891322 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0285872 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.0438480 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6926141 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.031229 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3941088 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5521104 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2947307 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1954132 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.2541560 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0923213 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.694521 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6505311 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5569632 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.1185114 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0341318 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.8343545 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2696451 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.650234 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3344872 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1877357 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.2316312 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0012309 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0487666 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8133988 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.352241 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0262514 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1296700 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3671997 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7134701 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.5609607 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9717626 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.749097 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5184600 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4944102 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9020287 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0571674 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.5167781 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3553189 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.474793 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2296772 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7404871 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5625870 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5737161 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.9867365 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.7887993 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 45.148403 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2105803 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8235892 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.6660741 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0076743 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 11.3501382 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.0286720 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 63.502446 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3393046 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8785103 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.7651696 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0056893 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+# Model
+
+&lt;table&gt;
+&lt;caption&gt;Model Results: L3Eng CatSp bilinguals: Spanish&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Lower &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Upper &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Effect_Size &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Std_Error &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; z_value &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Pr_z &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.7464334 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1334770 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 22.850599 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3074076 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3119637 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4249932 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6708416 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7269755 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2415388 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.188026 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.1757981 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5621851 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.5671843 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5705890 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8099896 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1924695 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.408764 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.1161837 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7332193 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.2874090 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7737992 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9095853 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2047571 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.040618 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.0522475 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7608120 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.1245597 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9008722 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.6467835 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.5143303 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.626113 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5366333 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2848888 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.4165789 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0006341 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.4837207 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0078965 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.184180 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2175284 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1972931 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9998309 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0455185 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9774743 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5697418 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.863469 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3759073 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6349058 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0738923 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2828710 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 36.3470320 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.3481836 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 208.107834 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.9809868 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8902938 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.0358727 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0000544 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 51.7383521 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.5352790 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 409.601040 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.1756537 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0556236 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.7382636 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0001853 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4:eng_phonation.type.bin.y &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 53.1083231 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6.3214519 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 446.178193 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.1900623 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.0859305 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.6579998 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0002542 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+# Model
+
+&lt;table&gt;
+&lt;caption&gt;Model Results: L3Eng CatSp bilinguals: English&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Lower &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; CI_Upper &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Effect_Size &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Std_Error &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; z_value &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Pr_z &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.2057957 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1659852 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 29.313060 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4361498 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3198941 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5993574 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5489346 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9697645 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.5339878 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.761170 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.0169269 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3044343 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.1008494 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9196700 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.1310751 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.1810165 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 12.071404 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.9015965 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.4364999 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.7464272 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0001794 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; stress4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.0120382 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.5656767 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.794539 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.6079046 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.3338321 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.3029089 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.0009569 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.3799965 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.7848972 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.426293 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1775725 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2879051 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1187055 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2632658 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; pc2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.2592262 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.8529043 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.859119 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1270799 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.1987819 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1595493 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.2462323 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+
+# Principal Components Analysis: Language dominance
+
+
+.pull-left[
+&lt;small&gt;
+
+| **English-to-Catalan/Spanish dominance**  | Spanish | Catalan | English | Exp. Variance |
+|-------------------------|---------|---------|---------|---------------|
+| **Component 1**          |         |         |         | **40.35%**    |
+| Age of onset of acquisition | 0.844   | 0.943   | -0.801  |               |
+| Age of comfort           | 0.769   | 0.944   | -0.922  |               |
+| Years of study           | -0.421  | -0.822  | 0.643   |               |
+| Years in region          | -0.948  | -0.958  | 0.889   |               |
+| Years in family          | -0.638  | -0.826  | 0.952   |               |
+| Years in workplace       | -0.446  | -0.650  | 0.637   |               |
+| Frequency use with friends |         | -0.609  | 0.560   |               |
+| Frequency use with family |         | -0.751  | 0.877   |               |
+| Frequency of self-talk   |         | -0.720  | 0.768   |               |
+| Frequency in counting    |         | -0.790  | 0.961   |               |
+| Speaking level           | -0.590  | -0.854  | 0.690   |               |
+| Listening level          | -0.598  | -0.805  |         |               |
+| Reading level            | -0.605  | -0.737  | 0.651   |               |
+| Writing level            | -0.625  | -0.835  | 0.731   |               |
+| Feels like oneself       |         | -0.694  | 0.746   |               |
+| Identifies with culture  |         | -0.714  | 0.746   |               |
+| Wants to sound native    | -0.558  |         | 0.775   |               |
+| Wants to be perceived as native | -0.637  |         | 0.637   |               |
+
+
+&lt;/small&gt;
+]
+
+.pull-right[
+&lt;small&gt;
+
+
+| **Spanish-to-Catalan**  | Spanish | Catalan | English | Exp. Variance |
+|-------------------------|---------|---------|---------|---------------|
+| **Component 2**          |         |         |         | **10.49%**    |
+| Frequency use with friends |         | 0.530   |         |               |
+| Frequency use with family | -0.670  |         |         |               |
+| Frequency use at work    |         | 0.647   |         |               |
+| Frequency in self-talk   | -0.622  | 0.520   |         |               |
+| Speaking level           |         | -0.647  |         |               |
+| Feels like oneself       | -0.581  |         |         |               |
+| Identifies with culture  | -0.582  |         |         |               |
+| Wants to be perceived as native | -0.425  |         |         |               |
+
+&lt;/small&gt;
+
+
+]
+
+
+---
+# Toward simultaneous 
+
+
+- **L3 acquisition models** have traditionally modeled L3 learning by putting forth an **asymmetric effect of the L1 and the L2** due to cognitive differentiation and learning mechanisms &lt;small&gt;(L1 CLI scenario [Hermas, 2014; Garcia Lecumberri &amp; Gallardo, 2003; Llisterri &amp; Poch-Olive, 1987], L2 Status Factor Model [Bardel &amp; Falk, 2007; Bardel &amp; Sanchez, 2017)&lt;/small&gt; or typological similarity &lt;small&gt;(Rothman, 2011; 2015; Rothman et al., 2019 ;Westergaard, 2021)&lt;/small&gt;.
+
+
+
+
+
+- More recently, Slabakova (2017) adopts a view of the multilingual grammar with **no a priori** privileged language to influence the next language, but rather the previously acquired languages are in competition depending on their relative activation (predominance of communicative use) - supported by psycholinguistic studies showing coactivation of bilinguals' two grammars &lt;small&gt;(Abutalebi and Green, 2007; Costa et al., 1999; Libben, 2017; Kroll, 2016)&lt;/small&gt;
+
+- Most of these models have formalized CLI at the initial stages of L3 acquisition , **static L1-L2**. However, the proficiency and dominance of the L1 and L2 in multilingual speakers may shift during their lifespan (e.g., heritage speakers, heritage returnees, long-term immigrants). 
+
+| Model                              | Proponents                                               | Proposal                                                                                                          |
+|------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| L1 CLI Scenario               | Hermas (2014); Garcia Lecumberri &amp; Gallardo (2003); Llisterri &amp; Poch-Olive (1987) | L1, due to its entrenchment, serves as the initial state for L3 acquisition.                                         |
+| L2 Status Factor Model (L2SF)      | Bardel &amp; Falk (2007); Bardel &amp; Sanchez (2017)            | L2 exerts more influence on L3 due to cognitive similarities and grouping as 'foreign languages'.                  |
+| Cumulative Enhancement Model (CEM) | Flynn et al. (2004)                                     | Language learning is cumulative, with facilitative CLI from both L1 and L2 on a property-by-property basis.  |
+| Typological Primacy Model (TPM)    | Rothman (2011; 2015); Rothman et al. (2019)             | The most structurally similar language (L1 or L2) is copied in the L3 initial state, with possible secondary CLI. |
+| Linguistic Proximity Model (LPM)   | Westergaard (2021)                                     | Acquisition occurs feature-by-feature, comparing each new feature with previously learned languages.             |
+
+
+---
+# Results: Dominance &amp; L3 Eng CatSp bilinguals  - English
+
+&lt;img src="L3_individual_english.png" width="3200" /&gt;
+
+---
+
+# Models of CLI in trilinguals
+&lt;br&gt;
+
+| Model | Description |
+|-------|------------------------------|
+| **L1 CLI Scenario**  | Transfer from the L1 due to its early entrenchment and stability. &lt;br&gt; _Hermas (2014); Garcia Lecumberri &amp; Gallardo (2003); Llisterri &amp; Poch-Olive (1987)_ |
+| **L2 Status Factor Model** | Transfer from the L2 due to processing similarities with the L3: similar learning context (explicit instruction), memory systems, and "foreign language" status. &lt;br&gt; _Bardel &amp; Falk (2007); Bardel &amp; Sanchez (2017); Paradis (2008); De Angelis (2005)_ |
+| **Typological Primacy Model** | CLI comes from the structurally most similar language, regardless of acquisition order. Proposes initial wholesale transfer; later influence may be selective or feature-by-feature. &lt;br&gt; _Rothman (2011, 2015); Rothman et al. (2019)_ |
+| **Cumulative Enhancement Model (CEM)** | Language learning is cumulative: both prior languages can contribute positively. Property-by-property transfer. Only **facilitative** transfer is predicted, but recent studies also show evidence of **non-facilitative** transfer. &lt;br&gt; _Flynn (2004); Puig-Mayenco et al. (2022); Cabrelli (2021)_ |
+
+---
+# Models of CLI in trilinguals
+
+&lt;br&gt;
+- **Models influenced by grammar-external factors**  
+
+
+ | Model | Description &amp; Key References |
+|-------|------------------------------|
+| **Scalpel Model** | Property-by-property transfer of L1 and L2. It highlights the role of cognitive and experiential variables such as frequency, ambiguity, and structural complexity. CLI depends on the current **activation** and **usage** of the L1 and L2. &lt;br&gt; _Slabakova (2017)_ |
+| **Language Communication Model** | CLI is driven by the **dominant language** in the speaker’s communicative environment. Related to the **Activation Threshold Hypothesis**, which suggests that recently used linguistic features are more accessible. &lt;br&gt; _Fallah (2016, 2018); Paradis (1993); Jabbari (2021)_ |
+
+???
+
+
+
+---
+
+# Models of regressive CLI
+ &lt;br&gt;
+  &lt;br&gt;
+- Regressive CLI requires models of drift or attrition and can help shed light into the processing or representational **stability** of previously learned languages.
+
+
+  
+- **Differential Stability Hypothesis (DSH)** `\(\Rightarrow\)` Late acquired linguistic systems are more permeable to L3 influence than early acquired ones 
+  &lt;small&gt;(Cabrelli Amaro, 2010)&lt;/small&gt;.
+  - L1 English L2 Spanish bilinguals  and L1 Spanish L2 English bilinguals learning L3 Brazilian Portuguese: perceptual stability in L1 and L2 Spanish vowels but drifts in production (vowel height in back vowels). Weaker DSH: changes occur at the processing level &lt;small&gt;(Cabrelli Amaro, 2017)&lt;/small&gt;  
+    
+
+- **DSH in early bilinguals**  
+  - Spanish-Basque bilinguals learning English as L3  &lt;small&gt;(Stoehr et al., 2024)&lt;/small&gt;.  
+     - L3 English influenced **L2 Basque** VOT more than **L1 Spanish**.  
+     - Suggests L2 is more susceptible, even in early bilinguals.
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-0.15.0.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
